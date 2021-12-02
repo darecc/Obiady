@@ -40,22 +40,6 @@ namespace Obiady
             PokazDodatki();
             rosnaco = true;
             max = 0;
-            //Danie d1 = new Danie("Kurczak z grilla", 1, 2);
-            //Danie d2 = new Danie("Rosół z kury", 1, 3);
-            //Danie d3 = new Danie("Zapiekanka z ryżu na wołowinie", 0, 2);
-            //Danie d4 = new Danie("Zapiekanka z ryżu na filecie drobiowym", 0, 1);
-            //Dodatek do1 = new Dodatek("ziemniaki", 1, 2);
-            //Dodatek do2 = new Dodatek("kasza gryczana", 1, 2);
-            //Dodatek do3 = new Dodatek("mizeria", 0, 2);
-            //dania.Add(d1);
-            //dania.Add(d2);
-            //dania.Add(d3);
-            //dania.Add(d4);
-            //dodatki.Add(do1);
-            //dodatki.Add(do2);
-            //dodatki.Add(do3);
-            PokazDania();
-            PokazDodatki();
         }
 
         private void PokazDodatki()
