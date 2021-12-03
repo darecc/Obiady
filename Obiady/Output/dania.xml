@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<ArrayOfDanie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Danie>
+    <nazwa>Kurczak z grilla</nazwa>
+    <ileRazy>1</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Rosół z kury</nazwa>
+    <ileRazy>1</ileRazy>
+    <priorytet>3</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zapiekanka z ryżu na wołowinie</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zapiekanka z ryżu na filecie drobiowym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Barszcz</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Bigos z kapusty włoskiej z mięsem wołowym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Bigos z kapusty włoskiej z mięsem drobiowym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Bigos z kapusty kiszonej z mięsem wołowym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Bigos z kapusty kiszonej z mięsem drobiowym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Gołąbki na mielonym z mięsa drobiowego</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Gołąbki na mielonym z mięsa wołowego</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Gołąbki na mielonym z mięsa drobiowego i wołowego</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Żurek na zakwasie z mąki gryczanej</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Kapuśniak z kapusty włoskiej z sercami drobiowymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Kapuśniak z kapusty włoskiej z żołądkami drobiowymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Kapuśniak z kapusty kiszonej z sercami drobiowymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa pomidorowa z ryżem na kurczaku</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa ogórkowa z sercami drobiowymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa ogórkowa z żołądkami drobiowymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Papryka nadziewana z mięsem drobiowym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Bób</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>3</priorytet>
+    <kategoria>warzywa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Śledź w jogurcie</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>ryba</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Dorsz z warzywami</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>ryba</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Królik zapiekany z warzywami</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>dziczyzna</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Kaczka cała pieczona z jabłkami</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>3</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Placki ziemniaczane</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>warzywa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Fasola z warzywami</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>warzywa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Goląbki w pomidorch z ni esen drobiowy'm</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Sandacz z warzywami po mazursku</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>3</priorytet>
+    <kategoria>ryba</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Pieczeń ze skrzydła indyka</nazwa>
+    <ileRazy>1</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Gulasz wołowy</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa gulasz</nazwa>
+    <ileRazy>3</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa fasolowa z żołądkami kurzymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Grochówka z żołądkami drobiowymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Kakaron (gryczany, kukurydziany lub ryżowy) z grybmi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>mączne</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Żurek na zakwasie z mąki gryczanej i na szynce wędzonej wołowej</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Karp</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>ryba</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Karp po nankijsku</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>ryba</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Pstrąg zapiekany z koperkiem i masłem</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>3</priorytet>
+    <kategoria>ryba</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Indyk z warzywami</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Tadżin z kurczaka z oliwkami i warzywami (marchew, cukinia, ziemniaki)</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa grzybowa na sercach kurzych</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Barszcz ukraiński z fasolą i włoszczyzną na żołądkach lub szynce wołowej wędzonej</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Udka kacze</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Tadżin na wołowinie i kawałkach drobiu z warzywami </nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+</ArrayOfDanie>

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<ArrayOfDodatek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Dodatek>
+    <nazwa>Ziemniaki</nazwa>
+    <ileRazy>1</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Kasza gryczana</nazwa>
+    <ileRazy>1</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Mizeria</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Kalafior</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Brokuły</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Kasza jaglana</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Kuskus</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Brukselka</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Leczo z cukini</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Czerwona kapusta zapiekana</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Buraczki</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Buraczki z chrzanem</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Sałatka z pomidorów z cebulą i jogurtem</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Surówka</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Surówka z kapusty kiszonej z cebulą w oleju</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Ogórki kiszone</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Frytki ziemniaczane</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Kapusta kiszona</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Sos ciemny na mące gryczanej</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Ser  żółty tarty</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Ser biały</nazwa>
+    <ileRazy>1</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Sos grzybowy</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Cieciorka</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Kasza jaglana</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Sałątka z fety i sałaty z ogórkiem kiszonym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Buraczki tarte zapiekane z jabłkiem</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+  </Dodatek>
+</ArrayOfDodatek>
