@@ -44,6 +44,7 @@ namespace Obiady
             this.zapiszToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajDodatekStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.edycjaDaniaStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.koniecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -121,6 +122,7 @@ namespace Obiady
             this.listaDodatkow.UseCompatibleStateImageBehavior = false;
             this.listaDodatkow.View = System.Windows.Forms.View.Details;
             this.listaDodatkow.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.OnClickColumn2);
+            this.listaDodatkow.DoubleClick += new System.EventHandler(this.ZwiekszIleRazy2);
             // 
             // columnHeader4
             // 
@@ -145,6 +147,7 @@ namespace Obiady
             this.zapiszToolStripMenuItem,
             this.dodajToolStripMenuItem,
             this.dodajDodatekStripMenuItem1,
+            this.edycjaDaniaStripMenuItem1,
             this.koniecToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -174,6 +177,13 @@ namespace Obiady
             this.dodajDodatekStripMenuItem1.Size = new System.Drawing.Size(107, 21);
             this.dodajDodatekStripMenuItem1.Text = "Dodaj dodatek";
             this.dodajDodatekStripMenuItem1.Click += new System.EventHandler(this.DodajDodatek);
+            // 
+            // edycjaDaniaStripMenuItem1
+            // 
+            this.edycjaDaniaStripMenuItem1.Name = "edycjaDaniaStripMenuItem1";
+            this.edycjaDaniaStripMenuItem1.Size = new System.Drawing.Size(91, 21);
+            this.edycjaDaniaStripMenuItem1.Text = "Edytuj danie";
+            this.edycjaDaniaStripMenuItem1.Click += new System.EventHandler(this.EdycjaDania);
             // 
             // koniecToolStripMenuItem
             // 
@@ -222,6 +232,7 @@ namespace Obiady
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ToolStripMenuItem dodajDodatekStripMenuItem1;
         private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ToolStripMenuItem edycjaDaniaStripMenuItem1;
     }
 }
 

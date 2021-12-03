@@ -18,7 +18,8 @@ namespace Obiady
         List<Danie> dania;
         List<Dodatek> dodatki;
         bool rosnaco;
-        static double max = 0;
+        static double maxDania = 0;
+        static double maxDodatki = 0;
         public Form1()
         {
             InitializeComponent();
@@ -39,12 +40,12 @@ namespace Obiady
             PokazDania();
             PokazDodatki();
             rosnaco = true;
-            max = 0;
+            maxDania = 0;
         }
 
-        private void PokazDodatki()
+        private void PokazDania()
         {
-            max = 0;
+            maxDodatki = 0;
             foreach (Danie d in dania)
             {
                 ListViewItem it = new ListViewItem(d.nazwa);
@@ -52,22 +53,23 @@ namespace Obiady
                 it.SubItems.Add(d.ileRazy.ToString());
                 it.SubItems.Add(d.priorytet.ToString());
                 listaDan.Items.Add(it);
-                if (d.ileRazy > max)
-                    max = d.ileRazy;
+                if (d.ileRazy > maxDania)
+                    maxDania = d.ileRazy;
+                listaDan.ListViewItemSorter = new ListViewItemComparer(-1, rosnaco);
             }
         }
-        private void PokazDania()
+        private void PokazDodatki()
         {
-            max = 0;
+            maxDodatki = 0;
             foreach (Dodatek d in dodatki)
             {
                 ListViewItem it = new ListViewItem(d.nazwa);
                 it.SubItems.Add(d.ileRazy.ToString());
                 it.SubItems.Add(d.priorytet.ToString());
                 listaDodatkow.Items.Add(it);
-                listaDan.ListViewItemSorter = new ListViewItemComparer(-1, rosnaco);
-                if (d.ileRazy > max)
-                    max = d.ileRazy;
+                if (d.ileRazy > maxDodatki)
+                    maxDodatki = d.ileRazy;
+                listaDodatkow.ListViewItemSorter = new ListViewItemComparer2(-1, rosnaco);
             }
         }
 
@@ -186,9 +188,9 @@ namespace Obiady
                     int a2 = int.Parse(((ListViewItem)y).SubItems[2].Text) + 1; // ile razy
                     int b1 = int.Parse(((ListViewItem)x).SubItems[3].Text); // priorytet
                     int b2 = int.Parse(((ListViewItem)y).SubItems[3].Text); // priorytet
-                    double da1 = (max + 1 - a1) * (b1) - b1;
-                    double da2 = (max + 1 - a2) * (b2) - b2;
-                    if (da1 < da2)
+                    double da1 = (a1 - maxDodatki) - b1 * (a1 + 0.3) / 3;
+                    double da2 = (a2 - maxDodatki) - b2 * (a2 + 0.3) / 3;
+                    if (da1 >= da2)
                         return 1;
                     else
                         return -1;
@@ -206,7 +208,7 @@ namespace Obiady
                     int a2 = int.Parse(((ListViewItem)y).SubItems[col].Text);
                     if (ascending)
                     {
-                        if (a1 >= a2)
+                        if (a1 < a2)
                             return 1;
                         else
                             return 0;
@@ -216,7 +218,7 @@ namespace Obiady
                         if (a2 >= a1)
                             return 1;
                         else
-                            return 0;
+                            return -1;
                     }
                 }
             }
@@ -247,9 +249,9 @@ namespace Obiady
                     int a2 = int.Parse(((ListViewItem)y).SubItems[1].Text) + 1; // ile razy
                     int b1 = int.Parse(((ListViewItem)x).SubItems[2].Text); // priorytet
                     int b2 = int.Parse(((ListViewItem)y).SubItems[2].Text); // priorytet
-                    double da1 = (max + 1 - a1) * (b1) - b1;
-                    double da2 = (max + 1 - a2) * (b2) - b2;
-                    if (da1 < da2)
+                    double da1 = (a1 - maxDodatki) - b1 * (a1 + 0.3)/3;
+                    double da2 = (a2 - maxDodatki) - b2 * (a2 + 0.3)/3;
+                    if (da1 >= da2)
                         return 1;
                     else
                         return -1;
@@ -283,5 +285,54 @@ namespace Obiady
             }
         }
 
+        private void EdycjaDania(object sender, EventArgs e)
+        {
+            if (listaDan.SelectedItems.Count == 0)
+                return;
+            string nazwa = listaDan.SelectedItems[0].Text;
+            NoweDanie edycja = new NoweDanie();
+            edycja.Text = "Edycja dania";
+            edycja.kategoria.Enabled = true;
+            edycja.nazwa.Text = nazwa;
+            string kategoria = listaDan.SelectedItems[0].SubItems[1].Text;
+            int prior = int.Parse(listaDan.SelectedItems[0].SubItems[3].Text);
+            edycja.priorytet.Value = prior;
+            for(int i = 0; i < edycja.kategoria.Items.Count; i++)
+                if (edycja.kategoria.Items[i].ToString().Equals(kategoria))
+                {
+                    edycja.kategoria.SelectedIndex = i;
+                    break;
+                }
+            DialogResult res = edycja.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                listaDan.SelectedItems[0].Text = edycja.nazwa.Text;
+                if (edycja.kategoria.SelectedItem != null)
+                    listaDan.SelectedItems[0].SubItems[1].Text = edycja.kategoria.SelectedItem.ToString();
+                listaDan.SelectedItems[0].SubItems[3].Text = edycja.priorytet.Value.ToString();
+                for(int i = 0; i < dania.Count; i++)
+                    if (dania[i].nazwa.Equals(nazwa))
+                    {
+                        dania[i].nazwa = listaDan.SelectedItems[0].Text;
+                        dania[i].priorytet = (int)edycja.priorytet.Value;
+                        if (edycja.kategoria.SelectedItem != null)
+                            dania[i].kategoria = edycja.kategoria.SelectedItem.ToString();
+                    }
+            }
+        }
+
+        private void ZwiekszIleRazy2(object sender, EventArgs e)
+        {
+            if (listaDodatkow.SelectedItems.Count == 0)
+                return;
+            string nazwa = listaDodatkow.SelectedItems[0].Text;
+            foreach (Dodatek dodatek in dodatki)
+                if (dodatek.nazwa.Equals(nazwa))
+                {
+                    dodatek.ileRazy++;
+                    ListViewItem it = listaDodatkow.SelectedItems[0];
+                    it.SubItems[1].Text = dodatek.ileRazy.ToString();
+                }
+        }
     }
 }
