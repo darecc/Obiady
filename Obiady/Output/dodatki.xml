@@ -130,4 +130,24 @@
     <ileRazy>0</ileRazy>
     <priorytet>1</priorytet>
   </Dodatek>
+  <Dodatek>
+    <nazwa>Fasolka szparagowa</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Szparagi białe</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>3</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Szparagi zielone</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>3</priorytet>
+  </Dodatek>
+  <Dodatek>
+    <nazwa>Smalec kaczy/gęsi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+  </Dodatek>
 </ArrayOfDodatek>

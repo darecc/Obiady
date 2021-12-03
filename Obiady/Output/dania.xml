@@ -127,7 +127,7 @@
     <kategoria>warzywa</kategoria>
   </Danie>
   <Danie>
-    <nazwa>Śledź w jogurcie</nazwa>
+    <nazwa>Śledź z jogurtem i cebulą</nazwa>
     <ileRazy>0</ileRazy>
     <priorytet>2</priorytet>
     <kategoria>ryba</kategoria>
@@ -163,7 +163,7 @@
     <kategoria>warzywa</kategoria>
   </Danie>
   <Danie>
-    <nazwa>Goląbki w pomidorch z ni esen drobiowy'm</nazwa>
+    <nazwa>Gołąbki w pomidorch z mięsem drobiowym</nazwa>
     <ileRazy>0</ileRazy>
     <priorytet>2</priorytet>
     <kategoria>drób</kategoria>
@@ -188,7 +188,7 @@
   </Danie>
   <Danie>
     <nazwa>Zupa gulasz</nazwa>
-    <ileRazy>3</ileRazy>
+    <ileRazy>4</ileRazy>
     <priorytet>2</priorytet>
     <kategoria>zupa</kategoria>
   </Danie>
@@ -205,10 +205,10 @@
     <kategoria>zupa</kategoria>
   </Danie>
   <Danie>
-    <nazwa>Kakaron (gryczany, kukurydziany lub ryżowy) z grybmi</nazwa>
+    <nazwa>Makaron (gryczany, kukurydziany lub ryżowy) z grzybami</nazwa>
     <ileRazy>0</ileRazy>
     <priorytet>2</priorytet>
-    <kategoria>mączne</kategoria>
+    <kategoria>warzywa</kategoria>
   </Danie>
   <Danie>
     <nazwa>Żurek na zakwasie z mąki gryczanej i na szynce wędzonej wołowej</nazwa>
@@ -269,5 +269,53 @@
     <ileRazy>0</ileRazy>
     <priorytet>1</priorytet>
     <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Flaczki wołowe</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Flaczki cielęce</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>3</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Flaczki wołowo-drobiowe</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>wołowina</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Gołąbki z mięsem drobiowym z kapusty kiszonej</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>drób</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Makaron spaghetti w sosie bolońskim z papryką chilli i serem żółtym</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>2</priorytet>
+    <kategoria>warzywa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa jarzynowa z sercami kurzymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa wiosenna z sercami kurzymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>zupa</kategoria>
+  </Danie>
+  <Danie>
+    <nazwa>Zupa kalafiorowa z sercami kurzymi</nazwa>
+    <ileRazy>0</ileRazy>
+    <priorytet>1</priorytet>
+    <kategoria>zupa</kategoria>
   </Danie>
 </ArrayOfDanie>

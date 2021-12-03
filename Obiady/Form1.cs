@@ -41,6 +41,12 @@ namespace Obiady
             PokazDodatki();
             rosnaco = true;
             maxDania = 0;
+            refreshStrip();
+        }
+
+        private void refreshStrip()
+        {
+            statusLabel.Text = "dania : " + dania.Count.ToString() + "  dodatki: " + dodatki.Count.ToString();
         }
 
         private void PokazDania()
@@ -142,6 +148,7 @@ namespace Obiady
                 it.SubItems.Add("0");
                 it.SubItems.Add(prior.ToString());
                 listaDan.Items.Add(it);
+                refreshStrip();
             }
         }
 
@@ -160,6 +167,7 @@ namespace Obiady
                 it.SubItems.Add("0");
                 it.SubItems.Add(prior.ToString());
                 listaDodatkow.Items.Add(it);
+                refreshStrip();
             }
         }
         private void OnClickColumn(object sender, System.Windows.Forms.ColumnClickEventArgs e)
