@@ -1,321 +1,855 @@
 <?xml version="1.0"?>
-<ArrayOfDanie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Danie>
-    <nazwa>Kurczak z grilla</nazwa>
-    <ileRazy>1</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Rosół z kury</nazwa>
-    <ileRazy>1</ileRazy>
-    <priorytet>3</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zapiekanka z ryżu na wołowinie</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zapiekanka z ryżu na filecie drobiowym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Barszcz</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Bigos z kapusty włoskiej z mięsem wołowym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Bigos z kapusty włoskiej z mięsem drobiowym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Bigos z kapusty kiszonej z mięsem wołowym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Bigos z kapusty kiszonej z mięsem drobiowym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Gołąbki na mielonym z mięsa drobiowego</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Gołąbki na mielonym z mięsa wołowego</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Gołąbki na mielonym z mięsa drobiowego i wołowego</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Żurek na zakwasie z mąki gryczanej</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Kapuśniak z kapusty włoskiej z sercami drobiowymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Kapuśniak z kapusty włoskiej z żołądkami drobiowymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Kapuśniak z kapusty kiszonej z sercami drobiowymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa pomidorowa z ryżem na kurczaku</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa ogórkowa z sercami drobiowymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa ogórkowa z żołądkami drobiowymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Papryka nadziewana z mięsem drobiowym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Bób</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>3</priorytet>
-    <kategoria>warzywa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Śledź z jogurtem i cebulą</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>ryba</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Dorsz z warzywami</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>ryba</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Królik zapiekany z warzywami</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>dziczyzna</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Kaczka cała pieczona z jabłkami</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>3</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Placki ziemniaczane</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>warzywa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Fasola z warzywami</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>warzywa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Gołąbki w pomidorch z mięsem drobiowym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Sandacz z warzywami po mazursku</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>3</priorytet>
-    <kategoria>ryba</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Pieczeń ze skrzydła indyka</nazwa>
-    <ileRazy>1</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Gulasz wołowy</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa gulasz</nazwa>
-    <ileRazy>4</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa fasolowa z żołądkami kurzymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Grochówka z żołądkami drobiowymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Makaron (gryczany, kukurydziany lub ryżowy) z grzybami</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>warzywa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Żurek na zakwasie z mąki gryczanej i na szynce wędzonej wołowej</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Karp</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>ryba</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Karp po nankijsku</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>ryba</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Pstrąg zapiekany z koperkiem i masłem</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>3</priorytet>
-    <kategoria>ryba</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Indyk z warzywami</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Tadżin z kurczaka z oliwkami i warzywami (marchew, cukinia, ziemniaki)</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa grzybowa na sercach kurzych</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Barszcz ukraiński z fasolą i włoszczyzną na żołądkach lub szynce wołowej wędzonej</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Udka kacze</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Tadżin na wołowinie i kawałkach drobiu z warzywami </nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Flaczki wołowe</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Flaczki cielęce</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>3</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Flaczki wołowo-drobiowe</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>wołowina</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Gołąbki z mięsem drobiowym z kapusty kiszonej</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>drób</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Makaron spaghetti w sosie bolońskim z papryką chilli i serem żółtym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-    <kategoria>warzywa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa jarzynowa z sercami kurzymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa wiosenna z sercami kurzymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-  <Danie>
-    <nazwa>Zupa kalafiorowa z sercami kurzymi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-    <kategoria>zupa</kategoria>
-  </Danie>
-</ArrayOfDanie>
+<ArrayOfDish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Dish>
+    <name>Kurczak z grilla</name>
+    <count>1</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kurczak</string>
+      <string>olej</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Rosół z kury</name>
+    <count>1</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>kurczak</string>
+      <string>marchew</string>
+      <string>seler</string>
+      <string>pietruszka</string>
+      <string>makaron</string>
+      <string />
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Zapiekanka z ryżu na wołowinie</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>ryż</string>
+      <string>grzyby</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>papryka</string>
+      <string>żółty ser</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Zapiekanka z ryżu na filecie drobiowym</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>filet z kurczaka</string>
+      <string>ryż</string>
+      <string>marchew</string>
+      <string>czosnek</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+      <string>grzyby</string>
+      <string />
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Barszcz</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>szynka wołowa</string>
+      <string>burak</string>
+      <string>grzyby</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>czosnek</string>
+      <string>seler</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Bigos z kapusty włoskiej z mięsem wołowym</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kapusta</string>
+      <string>grzyby</string>
+      <string>wołowina</string>
+      <string>olej</string>
+      <string>pomidor</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Bigos z kapusty włoskiej z mięsem drobiowym</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kapusta</string>
+      <string>kurczak</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>ziemniak</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Bigos z kapusty kiszonej z mięsem wołowym</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kapusta kiszona</string>
+      <string>wołowina</string>
+      <string>grzyby</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>cebula</string>
+      <string>pomidor</string>
+      <string>olej</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Bigos z kapusty kiszonej z mięsem drobiowym</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kapusta kiszona</string>
+      <string>grzyby</string>
+      <string>kurczak</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Gołąbki na mielonym z mięsa drobiowego</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kapusta</string>
+      <string>mielone z drobiu</string>
+      <string>ryż</string>
+      <string>cebula</string>
+      <string>olej</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Gołąbki na mielonym z mięsa wołowego</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>mielone wołowe</string>
+      <string>ryż</string>
+      <string>pomidor</string>
+      <string>kapusta</string>
+      <string>cebula</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Gołąbki na mielonym z mięsa drobiowego i wołowego</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kapusta</string>
+      <string>ryż</string>
+      <string>mielona z kurczaka</string>
+      <string>mielone wołowe</string>
+      <string>cebula</string>
+      <string>pomidor</string>
+      <string>olej</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Żurek na zakwasie z mąki gryczanej i żołądkach z kurczaka</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>zakwas gryczany</string>
+      <string>żołądki z kurczaka</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>por</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Kapuśniak z kapusty włoskiej z sercami drobiowymi</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kapusta</string>
+      <string>serca z kurczaka</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>ziemniak</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Kapuśniak z kapusty włoskiej z żołądkami drobiowymi</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>żołądki z kurczaka</string>
+      <string>kapusta</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Kapuśniak z kapusty kiszonej z sercami drobiowymi</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kapusta kiszona</string>
+      <string>serca z kurczaka</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>ziemniak</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Zupa pomidorowa z ryżem na kurczaku</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kurczak</string>
+      <string>pomidor</string>
+      <string>ryż</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Zupa ogórkowa z sercami z kurczaka</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>serca z kurczaka</string>
+      <string>ogórek kiszony</string>
+      <string>marchew</string>
+      <string>czosnek</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Zupa ogórkowa z żołądkami drobiowymi</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>ogórek kiszony</string>
+      <string>serca z kurczaka</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>ziemniak</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Papryka nadziewana z mięsem drobiowym</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>papryka</string>
+      <string>mielona z kurczaka</string>
+      <string>cebula</string>
+      <string>olej</string>
+      <string>czosnek</string>
+      <string>ryż</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Bób</name>
+    <count>0</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>bób</string>
+      <string>masło</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Śledź z jogurtem i cebulą</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>śledź</string>
+      <string>jogurt</string>
+      <string>cebula</string>
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Dorsz z warzywami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>dorsz</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+      <string>olej</string>
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Królik zapiekany z warzywami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>królik</string>
+      <string>olej</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+    </ingredients>
+    <category>dziczyzna</category>
+  </Dish>
+  <Dish>
+    <name>Kaczka cała pieczona z jabłkami</name>
+    <count>0</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>kaczka</string>
+      <string>jabłko</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Placki ziemniaczane</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>ziemniak</string>
+      <string>mąka</string>
+      <string>cebula</string>
+      <string>olej</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Fasola z warzywami</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>fasola</string>
+      <string>pomidor</string>
+      <string>marchew</string>
+      <string>papryka</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+      <string>czosnek</string>
+      <string>cebula</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Gołąbki w pomidorch z mięsem drobiowym</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>mielone z kurczaka</string>
+      <string>pomidor</string>
+      <string>kapusta</string>
+      <string>ryż</string>
+      <string>cebula</string>
+      <string>olej</string>
+      <string>czosnek</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Sandacz z warzywami po mazursku</name>
+    <count>0</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>sandacz</string>
+      <string>marchew</string>
+      <string>cebula</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>mąka</string>
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Pieczeń ze skrzydła indyka</name>
+    <count>1</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>indyk</string>
+      <string>cebula</string>
+      <string>olej</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Gulasz wołowy</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>marchew</string>
+      <string>grzyby</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Zupa gulasz</name>
+    <count>4</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>grzyby</string>
+      <string>ziemniak</string>
+      <string>pomidor</string>
+      <string>czosnek</string>
+      <string>cebula</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Zupa fasolowa z żołądkami z kurczaka</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>żołądki z kurczaka</string>
+      <string>fasola</string>
+      <string>czosnek</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Grochówka z żołądkami z kurczaka</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>żołądki z kurczaka</string>
+      <string>groch</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Makaron (gryczany, kukurydziany lub ryżowy) z grzybami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>makaron</string>
+      <string>olej</string>
+      <string>grzyby</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Żurek na zakwasie z mąki gryczanej i na szynce wędzonej wołowej</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>zakwas gryczany</string>
+      <string>szynka wołowa</string>
+      <string>marchew</string>
+      <string>czosnek</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string />
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Karp</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>karp</string>
+      <string>mąka</string>
+      <string />
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Karp po nankijsku</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>karp</string>
+      <string>cebula</string>
+      <string>cebula dymka</string>
+      <string>czosnek</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>por</string>
+      <string>seler</string>
+      <string>olej</string>
+      <string>mąka</string>
+      <string>jajko</string>
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Pstrąg zapiekany z koperkiem i masłem</name>
+    <count>0</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>pstrąg</string>
+      <string>koperek</string>
+      <string>masło</string>
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Indyk z warzywami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>indyk</string>
+      <string>marchew</string>
+      <string>olej</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Tadżin z kurczaka z oliwkami i warzywami (marchew, cukinia, ziemniaki)</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kurczak</string>
+      <string>olej</string>
+      <string>czosnek</string>
+      <string>cebula</string>
+      <string>oliwka</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>cukinia</string>
+      <string>ziemniak</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Zupa grzybowa na sercach kurzych</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>serca z kurczaka</string>
+      <string>grzyby</string>
+      <string>śmietana</string>
+      <string>ziemniak</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Barszcz ukraiński z fasolą i włoszczyzną na żołądkach lub szynce wołowej wędzonej</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>burak</string>
+      <string>szynka wołowa</string>
+      <string>fasola</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>grzyby</string>
+      <string>czosnek</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Udka kacze</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kaczka</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Tadżin na wołowinie i kawałkach drobiu z warzywami </name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>kurczak</string>
+      <string>olej</string>
+      <string>cukinia</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>czosnek</string>
+      <string>seler</string>
+      <string>por</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Flaczki wołowe</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Flaczki cielęce</name>
+    <count>0</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>cielęcina</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Flaczki wołowo-drobiowe</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>kurczak</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Gołąbki z mięsem drobiowym z kapusty kiszonej</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kapusta kiszona</string>
+      <string>ryż</string>
+      <string>kurczak</string>
+      <string>cebula</string>
+      <string>ryż</string>
+      <string>pomidor</string>
+      <string>olej</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Makaron spaghetti w sosie bolońskim z papryką chilli i serem żółtym</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>makaron</string>
+      <string>pomidor</string>
+      <string>ser żółty</string>
+      <string>bazylia</string>
+      <string>czosnek</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Zupa jarzynowa z sercami z kurczaka</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>serca z kurczaka</string>
+      <string>kalafior</string>
+      <string>por</string>
+      <string>seler</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>fasolka szparagowa</string>
+      <string>groszek zielony</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Zupa wiosenna z sercami kurzymi</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>serca z kurczaka</string>
+      <string>groszek zielony</string>
+      <string>fasolka szparagowa</string>
+      <string>kalafior</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+      <string>ziemniak</string>
+      <string />
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Zupa kalafiorowa z sercami kurzymi</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>serca z kurczaka</string>
+      <string>kalafior</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>ziemniak</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Zupa szparagowa z sercami z kurczaka</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>serca z kurczaka</string>
+      <string>szparag</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+    </ingredients>
+    <category>zupa</category>
+  </Dish>
+  <Dish>
+    <name>Placki ziemniaczane z cukinią</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>ziemniak</string>
+      <string>cebula</string>
+      <string>cukinia</string>
+      <string>olej</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Miętus z warzywami</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>miętus</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+      <string>mąka</string>
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Zapiekanka ziemniaczana z kurczakiem</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>filet z kurczaka</string>
+      <string>ziemniak</string>
+      <string>ser żółty</string>
+      <string>czosnek</string>
+      <string>cebula</string>
+      <string>por</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Grzyby świeże z ziemniakami</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>grzyby</string>
+      <string>ziemniak</string>
+      <string>olej</string>
+      <string>śmietana</string>
+      <string>cebula</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Kotlety mielone z mielonego z drobiu</name>
+    <count>1</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>mielone z kurczaka</string>
+      <string>cebula</string>
+      <string>bułka tarta</string>
+      <string>jajko</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Pulpety z wołowiny w sosie grzybowym</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>mielone wołowe</string>
+      <string>grzyby</string>
+      <string>mąka</string>
+      <string>bułka tarta</string>
+      <string>cebula</string>
+      <string>olej</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Filet z mintaja z ziemniakami</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>mintaj</string>
+      <string>ziemniak</string>
+      <string>mąka</string>
+      <string>olej</string>
+    </ingredients>
+    <category>ryba</category>
+  </Dish>
+</ArrayOfDish>

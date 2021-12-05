@@ -45,6 +45,7 @@ namespace Obiady
             this.dodajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajDodatekStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.edycjaDaniaStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingredientsStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.koniecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -54,12 +55,14 @@ namespace Obiady
             // 
             // listaDan
             // 
+            this.listaDan.AllowColumnReorder = true;
             this.listaDan.BackColor = System.Drawing.Color.GhostWhite;
             this.listaDan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader7,
             this.columnHeader2,
             this.columnHeader3});
+            this.listaDan.FullRowSelect = true;
             this.listaDan.HideSelection = false;
             this.listaDan.Location = new System.Drawing.Point(12, 48);
             this.listaDan.Name = "listaDan";
@@ -68,7 +71,7 @@ namespace Obiady
             this.listaDan.UseCompatibleStateImageBehavior = false;
             this.listaDan.View = System.Windows.Forms.View.Details;
             this.listaDan.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.OnClickColumn);
-            this.listaDan.DoubleClick += new System.EventHandler(this.ZwiekszIleRazy);
+            this.listaDan.DoubleClick += new System.EventHandler(this.IncreaseCounts);
             // 
             // columnHeader1
             // 
@@ -151,6 +154,7 @@ namespace Obiady
             this.dodajToolStripMenuItem,
             this.dodajDodatekStripMenuItem1,
             this.edycjaDaniaStripMenuItem1,
+            this.ingredientsStripMenuItem1,
             this.koniecToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -163,7 +167,7 @@ namespace Obiady
             this.zapiszToolStripMenuItem.Name = "zapiszToolStripMenuItem";
             this.zapiszToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
             this.zapiszToolStripMenuItem.Text = "Zapisz";
-            this.zapiszToolStripMenuItem.Click += new System.EventHandler(this.Zapisz);
+            this.zapiszToolStripMenuItem.Click += new System.EventHandler(this.WriteAll);
             // 
             // dodajToolStripMenuItem
             // 
@@ -171,7 +175,7 @@ namespace Obiady
             this.dodajToolStripMenuItem.Name = "dodajToolStripMenuItem";
             this.dodajToolStripMenuItem.Size = new System.Drawing.Size(91, 21);
             this.dodajToolStripMenuItem.Text = "Dodaj danie";
-            this.dodajToolStripMenuItem.Click += new System.EventHandler(this.DodajDanie);
+            this.dodajToolStripMenuItem.Click += new System.EventHandler(this.AddDish);
             // 
             // dodajDodatekStripMenuItem1
             // 
@@ -179,14 +183,21 @@ namespace Obiady
             this.dodajDodatekStripMenuItem1.Name = "dodajDodatekStripMenuItem1";
             this.dodajDodatekStripMenuItem1.Size = new System.Drawing.Size(107, 21);
             this.dodajDodatekStripMenuItem1.Text = "Dodaj dodatek";
-            this.dodajDodatekStripMenuItem1.Click += new System.EventHandler(this.DodajDodatek);
+            this.dodajDodatekStripMenuItem1.Click += new System.EventHandler(this.AddSideDish);
             // 
             // edycjaDaniaStripMenuItem1
             // 
             this.edycjaDaniaStripMenuItem1.Name = "edycjaDaniaStripMenuItem1";
             this.edycjaDaniaStripMenuItem1.Size = new System.Drawing.Size(91, 21);
             this.edycjaDaniaStripMenuItem1.Text = "Edytuj danie";
-            this.edycjaDaniaStripMenuItem1.Click += new System.EventHandler(this.EdycjaDania);
+            this.edycjaDaniaStripMenuItem1.Click += new System.EventHandler(this.EditDish);
+            // 
+            // ingredientsStripMenuItem1
+            // 
+            this.ingredientsStripMenuItem1.Name = "ingredientsStripMenuItem1";
+            this.ingredientsStripMenuItem1.Size = new System.Drawing.Size(108, 21);
+            this.ingredientsStripMenuItem1.Text = "Edytuj składniki";
+            this.ingredientsStripMenuItem1.Click += new System.EventHandler(this.EdytujSkladniki);
             // 
             // koniecToolStripMenuItem
             // 
@@ -206,9 +217,9 @@ namespace Obiady
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // statusLabel
             // 
-            this.statusLabel.Name = "toolStripStatusLabel1";
+            this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(131, 17);
             this.statusLabel.Text = "toolStripStatusLabel1";
             // 
@@ -257,6 +268,7 @@ namespace Obiady
         private System.Windows.Forms.ToolStripMenuItem edycjaDaniaStripMenuItem1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+        private System.Windows.Forms.ToolStripMenuItem ingredientsStripMenuItem1;
     }
 }
 

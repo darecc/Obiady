@@ -10,21 +10,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using static System.Windows.Forms.ListViewItem;
 
 namespace Obiady
 {
     public partial class Form1 : Form
     {
-        List<Danie> dania;
-        List<Dodatek> dodatki;
+        List<Dish> dania;
+        List<SideDish> dodatki;
+        List<Ingredient> ingredients;
         bool rosnaco;
         static double maxDania = 0;
         static double maxDodatki = 0;
         public Form1()
         {
             InitializeComponent();
-            dania = new List<Danie>();
-            dodatki = new List<Dodatek>();
+            dania = new List<Dish>();
+            dodatki = new List<SideDish>();
         }
 
         private void Koniec(object sender, EventArgs e)
@@ -34,134 +36,170 @@ namespace Obiady
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            WczytajDania();
-            WczytajDodatki();
-
-            PokazDania();
-            PokazDodatki();
-            rosnaco = true;
-            maxDania = 0;
+            ReadDishes();
+            ReadSideDishes();
+            ReadIngredients();
+            ShowDishes();
+            ShowSideDishes();
             refreshStrip();
-        }
+
+            rosnaco = false;
+            maxDania = 0;
+         }
 
         private void refreshStrip()
         {
             statusLabel.Text = "dania : " + dania.Count.ToString() + "  dodatki: " + dodatki.Count.ToString();
         }
 
-        private void PokazDania()
+        private void ShowDishes()
         {
             maxDodatki = 0;
-            foreach (Danie d in dania)
+            foreach (Dish d in dania)
             {
-                ListViewItem it = new ListViewItem(d.nazwa);
-                it.SubItems.Add(d.kategoria);
-                it.SubItems.Add(d.ileRazy.ToString());
-                it.SubItems.Add(d.priorytet.ToString());
+                ListViewItem it = new ListViewItem(d.name);
+                it.SubItems.Add(d.category);
+                it.SubItems.Add(d.count.ToString());
+                it.SubItems.Add(d.priority.ToString());
+                if (d.ingredients.Count > 0) {
+                    it.ForeColor = Color.Brown;
+                    it.BackColor = Color.Azure;
+                }
                 listaDan.Items.Add(it);
-                if (d.ileRazy > maxDania)
-                    maxDania = d.ileRazy;
+                if (d.count > maxDania)
+                    maxDania = d.count;
                 listaDan.ListViewItemSorter = new ListViewItemComparer(-1, rosnaco);
             }
         }
-        private void PokazDodatki()
+        private void ShowSideDishes()
         {
             maxDodatki = 0;
-            foreach (Dodatek d in dodatki)
+            foreach (SideDish d in dodatki)
             {
-                ListViewItem it = new ListViewItem(d.nazwa);
-                it.SubItems.Add(d.ileRazy.ToString());
-                it.SubItems.Add(d.priorytet.ToString());
+                ListViewItem it = new ListViewItem(d.name);
+                it.SubItems.Add(d.count.ToString());
+                it.SubItems.Add(d.priority.ToString());
                 listaDodatkow.Items.Add(it);
-                if (d.ileRazy > maxDodatki)
-                    maxDodatki = d.ileRazy;
+                if (d.count > maxDodatki)
+                    maxDodatki = d.count;
                 listaDodatkow.ListViewItemSorter = new ListViewItemComparer2(-1, rosnaco);
             }
         }
 
-        private void WczytajDodatki()
+        private void ReadSideDishes()
         {
             FileStream fs = new FileStream("dodatki.xml", FileMode.Open);
-            XmlSerializer xs = new XmlSerializer(typeof(List<Dodatek>));
-            dodatki = (List<Dodatek>)xs.Deserialize(fs);
+            XmlSerializer xs = new XmlSerializer(typeof(List<SideDish>));
+            dodatki = (List<SideDish>)xs.Deserialize(fs);
             fs.Close();
         }
 
-        private void WczytajDania()
+        private void ReadDishes()
         {
             FileStream fs = new FileStream("dania.xml", FileMode.Open);
-            XmlSerializer xs = new XmlSerializer(typeof(List<Danie>));
-            dania = (List<Danie>)xs.Deserialize(fs);
+            XmlSerializer xs = new XmlSerializer(typeof(List<Dish>));
+            dania = (List<Dish>)xs.Deserialize(fs);
             fs.Close();
         }
 
-        private void ZwiekszIleRazy(object sender, EventArgs e)
+        private void ReadIngredients()
+        {
+            FileStream fs = new FileStream("ingredients.xml", FileMode.Open);
+            XmlSerializer xs = new XmlSerializer(typeof(List<Ingredient>));
+            ingredients = (List<Ingredient>)xs.Deserialize(fs);
+            fs.Close();
+        }
+
+        private void IncreaseCounts(object sender, EventArgs e)
         {
             if (listaDan.SelectedItems.Count == 0)
                 return;
             string nazwa = listaDan.SelectedItems[0].Text;
-            foreach (Danie danie in dania)
-                if (danie.nazwa.Equals(nazwa))
+            foreach (Dish danie in dania)
+                if (danie.name.Equals(nazwa))
                 {
-                    danie.ileRazy++;
+                    danie.count++;
                     ListViewItem it = listaDan.SelectedItems[0];
-                    it.SubItems[2].Text = danie.ileRazy.ToString();
+                    it.SubItems[2].Text = danie.count.ToString();
                 }
-
         }
 
-        private void Zapisz(object sender, EventArgs e)
+        private void WriteAll(object sender, EventArgs e)
         {
-            ZapiszDania();
-            ZapiszDodatki();
+            WriteDishes();
+            WriteSideDishes();
+            WriteIngredients();
         }
 
-        private void ZapiszDodatki()
+        private void WriteSideDishes()
         {
             FileStream fs = new FileStream("dodatki.xml", FileMode.Create);
-            XmlSerializer xs = new XmlSerializer(typeof(List<Dodatek>));
+            XmlSerializer xs = new XmlSerializer(typeof(List<SideDish>));
             xs.Serialize(fs, dodatki);
             fs.Close();
         }
 
-        private void ZapiszDania()
+        private void WriteIngredients()
+        {
+            FileStream fs = new FileStream("ingredients.xml", FileMode.Create);
+            XmlSerializer xs = new XmlSerializer(typeof(List<Ingredient>));
+            xs.Serialize(fs, ingredients);
+            fs.Close();
+        }
+
+        private void WriteDishes()
         {
             FileStream fs = new FileStream("dania.xml", FileMode.Create);
-            XmlSerializer xs = new XmlSerializer(typeof(List<Danie>));
+            XmlSerializer xs = new XmlSerializer(typeof(List<Dish>));
             xs.Serialize(fs, dania);
             fs.Close();
         }
 
-        private void DodajDanie(object sender, EventArgs e)
+        private void AddDish(object sender, EventArgs e)
         {
             NoweDanie nowe = new NoweDanie();
             nowe.Text = "Nowe danie";
             nowe.kategoria.Enabled = true;
+            nowe.skladniki.Enabled = true;
+            nowe.przyciskDodawania.Enabled = false;
             DialogResult res = nowe.ShowDialog();
             if (res == DialogResult.OK)
             {
                 int prior = (int)nowe.priorytet.Value;
-                Danie d = new Danie(nowe.nazwa.Text, 0, prior, nowe.kategoria.SelectedItem.ToString());
+                Dish d = new Dish(nowe.nazwa.Text, 0, prior, nowe.kategoria.SelectedItem.ToString());
+                string skladniki = nowe.skladniki.Text;
+                d.ingredients = new List<string>();
+                string[] linie = skladniki.Split(System.Environment.NewLine);
+                d.ingredients = new List<string>();
+                foreach (string s in linie)
+                    d.ingredients.Add(s);
                 dania.Add(d);
                 ListViewItem it = new ListViewItem(nowe.nazwa.Text);
                 it.SubItems.Add(nowe.kategoria.SelectedItem.ToString());
                 it.SubItems.Add("0");
                 it.SubItems.Add(prior.ToString());
+                if (linie.Length > 0)
+                {
+                    it.ForeColor = Color.Brown;
+                    it.BackColor = Color.Coral;
+                }
                 listaDan.Items.Add(it);
                 refreshStrip();
             }
         }
 
-        private void DodajDodatek(object sender, EventArgs e)
+        private void AddSideDish(object sender, EventArgs e)
         {
             NoweDanie nowe = new NoweDanie();
             nowe.Text = "Nowy dodatek";
             nowe.kategoria.Enabled = false;
+            nowe.skladniki.Enabled = false;
+            nowe.przyciskDodawania.Enabled = true;
             DialogResult res = nowe.ShowDialog();
             if (res == DialogResult.OK)
             {
                 int prior = (int)nowe.priorytet.Value;
-                Dodatek d = new Dodatek(nowe.nazwa.Text, 0, prior);
+                SideDish d = new SideDish(nowe.nazwa.Text, 0, prior);
                 dodatki.Add(d);
                 ListViewItem it = new ListViewItem(nowe.nazwa.Text);
                 it.SubItems.Add("0");
@@ -176,6 +214,7 @@ namespace Obiady
             //ListViewItemComparer jest metodą, która dostarcza porównania wskazanej kolumny
             listaDan.ListViewItemSorter = new ListViewItemComparer(e.Column, rosnaco);
         }
+
         // porównywacz dla listy dań
         class ListViewItemComparer : IComparer
         {	//klasa dostarczająca funkcję porównującą dwa elementy
@@ -293,7 +332,7 @@ namespace Obiady
             }
         }
 
-        private void EdycjaDania(object sender, EventArgs e)
+        private void EditDish(object sender, EventArgs e)
         {
             if (listaDan.SelectedItems.Count == 0)
                 return;
@@ -301,7 +340,14 @@ namespace Obiady
             NoweDanie edycja = new NoweDanie();
             edycja.Text = "Edycja dania";
             edycja.kategoria.Enabled = true;
+            edycja.skladniki.Enabled = true;
             edycja.nazwa.Text = nazwa;
+            Dish danie = null;
+            foreach (Dish d in dania)
+                if (d.name.Equals(nazwa))
+                    danie = d;
+            foreach (string s in danie.ingredients)
+                edycja.skladniki.Text = edycja.skladniki.Text + s + System.Environment.NewLine;
             string kategoria = listaDan.SelectedItems[0].SubItems[1].Text;
             int prior = int.Parse(listaDan.SelectedItems[0].SubItems[3].Text);
             edycja.priorytet.Value = prior;
@@ -319,12 +365,19 @@ namespace Obiady
                     listaDan.SelectedItems[0].SubItems[1].Text = edycja.kategoria.SelectedItem.ToString();
                 listaDan.SelectedItems[0].SubItems[3].Text = edycja.priorytet.Value.ToString();
                 for(int i = 0; i < dania.Count; i++)
-                    if (dania[i].nazwa.Equals(nazwa))
+                    if (dania[i].name.Equals(nazwa))
                     {
-                        dania[i].nazwa = listaDan.SelectedItems[0].Text;
-                        dania[i].priorytet = (int)edycja.priorytet.Value;
+                        dania[i].name = listaDan.SelectedItems[0].Text;
+                        dania[i].priority = (int)edycja.priorytet.Value;
                         if (edycja.kategoria.SelectedItem != null)
-                            dania[i].kategoria = edycja.kategoria.SelectedItem.ToString();
+                            dania[i].category = edycja.kategoria.SelectedItem.ToString();
+                        string skladniki = edycja.skladniki.Text;
+                        string[] linie = skladniki.Split(System.Environment.NewLine);
+                        if (linie.Length > 0)
+                            listaDan.SelectedItems[0].BackColor = Color.Coral;
+                        dania[i].ingredients = new List<string>();
+                        foreach (string s in linie)
+                            dania[i].ingredients.Add(s);
                     }
             }
         }
@@ -334,13 +387,24 @@ namespace Obiady
             if (listaDodatkow.SelectedItems.Count == 0)
                 return;
             string nazwa = listaDodatkow.SelectedItems[0].Text;
-            foreach (Dodatek dodatek in dodatki)
-                if (dodatek.nazwa.Equals(nazwa))
+            foreach (SideDish dodatek in dodatki)
+                if (dodatek.name.Equals(nazwa))
                 {
-                    dodatek.ileRazy++;
+                    dodatek.count++;
                     ListViewItem it = listaDodatkow.SelectedItems[0];
-                    it.SubItems[1].Text = dodatek.ileRazy.ToString();
+                    it.SubItems[1].Text = dodatek.count.ToString();
                 }
+        }
+
+        private void EdytujSkladniki(object sender, EventArgs e)
+        {
+            EditIngredients edycja = new EditIngredients();
+            edycja.ingredients = ingredients;
+            DialogResult res = edycja.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                ingredients = edycja.ingredients;
+            }
         }
     }
 }

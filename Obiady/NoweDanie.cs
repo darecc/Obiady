@@ -24,12 +24,18 @@ namespace Obiady
 
         private void OK(object sender, EventArgs e)
         {
-            this.Close();
+            if (kategoria.SelectedIndex != -1)
+                this.Close();   
         }
 
         private void NoweDanie_Load(object sender, EventArgs e)
         {
             nazwa.Focus();
+        }
+
+        private void SelectionChange(object sender, EventArgs e)
+        {
+            przyciskDodawania.Enabled = true;
         }
     }
 }

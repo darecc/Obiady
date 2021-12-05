@@ -1,153 +1,153 @@
 <?xml version="1.0"?>
-<ArrayOfDodatek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Dodatek>
-    <nazwa>Ziemniaki</nazwa>
-    <ileRazy>1</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Kasza gryczana</nazwa>
-    <ileRazy>1</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Mizeria</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Kalafior</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Brokuły</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Kasza jaglana</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Kuskus</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Brukselka</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Leczo z cukini</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Czerwona kapusta zapiekana</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Buraczki</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Buraczki z chrzanem</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Sałatka z pomidorów z cebulą i jogurtem</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Surówka</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Surówka z kapusty kiszonej z cebulą w oleju</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Ogórki kiszone</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Frytki ziemniaczane</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Kapusta kiszona</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Sos ciemny na mące gryczanej</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Ser  żółty tarty</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Ser biały</nazwa>
-    <ileRazy>1</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Sos grzybowy</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Cieciorka</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Kasza jaglana</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Sałątka z fety i sałaty z ogórkiem kiszonym</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Buraczki tarte zapiekane z jabłkiem</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>1</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Fasolka szparagowa</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Szparagi białe</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>3</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Szparagi zielone</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>3</priorytet>
-  </Dodatek>
-  <Dodatek>
-    <nazwa>Smalec kaczy/gęsi</nazwa>
-    <ileRazy>0</ileRazy>
-    <priorytet>2</priorytet>
-  </Dodatek>
-</ArrayOfDodatek>
+<ArrayOfSideDish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SideDish>
+    <name>Ziemniaki</name>
+    <count>1</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Kasza gryczana</name>
+    <count>1</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Mizeria</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Kalafior</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Brokuły</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Kasza jaglana</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Kuskus</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Brukselka</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Leczo z cukini</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Czerwona kapusta zapiekana</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Buraczki</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Buraczki z chrzanem</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Sałatka z pomidorów z cebulą i jogurtem</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Surówka</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Surówka z kapusty kiszonej z cebulą w oleju</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Ogórki kiszone</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Frytki ziemniaczane</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Kapusta kiszona</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Sos ciemny na mące gryczanej</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Ser  żółty tarty</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Ser biały</name>
+    <count>1</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Sos grzybowy</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Cieciorka</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Kasza jaglana</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Sałątka z fety i sałaty z ogórkiem kiszonym</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Buraczki tarte zapiekane z jabłkiem</name>
+    <count>0</count>
+    <priority>1</priority>
+  </SideDish>
+  <SideDish>
+    <name>Fasolka szparagowa</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+  <SideDish>
+    <name>Szparagi białe</name>
+    <count>0</count>
+    <priority>3</priority>
+  </SideDish>
+  <SideDish>
+    <name>Szparagi zielone</name>
+    <count>0</count>
+    <priority>3</priority>
+  </SideDish>
+  <SideDish>
+    <name>Smalec kaczy/gęsi</name>
+    <count>0</count>
+    <priority>2</priority>
+  </SideDish>
+</ArrayOfSideDish>

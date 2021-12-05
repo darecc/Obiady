@@ -29,33 +29,36 @@ namespace Obiady
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.przyciskDodawania = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.nazwa = new System.Windows.Forms.TextBox();
             this.priorytet = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.kategoria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.skladniki = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.priorytet)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // przyciskDodawania
             // 
-            this.button1.BackColor = System.Drawing.Color.Bisque;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(630, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 27);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.OK);
+            this.przyciskDodawania.BackColor = System.Drawing.Color.Bisque;
+            this.przyciskDodawania.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.przyciskDodawania.Enabled = false;
+            this.przyciskDodawania.Location = new System.Drawing.Point(630, 103);
+            this.przyciskDodawania.Name = "przyciskDodawania";
+            this.przyciskDodawania.Size = new System.Drawing.Size(56, 27);
+            this.przyciskDodawania.TabIndex = 3;
+            this.przyciskDodawania.Text = "OK";
+            this.przyciskDodawania.UseVisualStyleBackColor = false;
+            this.przyciskDodawania.Click += new System.EventHandler(this.OK);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(561, 69);
+            this.button2.Location = new System.Drawing.Point(561, 103);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 27);
             this.button2.TabIndex = 4;
@@ -111,32 +114,52 @@ namespace Obiady
             "warzywa",
             "wołowina",
             "zupa"});
-            this.kategoria.Location = new System.Drawing.Point(90, 51);
+            this.kategoria.Location = new System.Drawing.Point(24, 82);
             this.kategoria.Name = "kategoria";
             this.kategoria.Size = new System.Drawing.Size(121, 25);
             this.kategoria.TabIndex = 2;
+            this.kategoria.SelectedIndexChanged += new System.EventHandler(this.SelectionChange);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 57);
+            this.label2.Location = new System.Drawing.Point(23, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "kategoria";
             // 
+            // skladniki
+            // 
+            this.skladniki.Location = new System.Drawing.Point(203, 49);
+            this.skladniki.Multiline = true;
+            this.skladniki.Name = "skladniki";
+            this.skladniki.Size = new System.Drawing.Size(347, 81);
+            this.skladniki.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(141, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Składniki";
+            // 
             // NoweDanie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 110);
+            this.ClientSize = new System.Drawing.Size(696, 142);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.skladniki);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.kategoria);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.priorytet);
             this.Controls.Add(this.nazwa);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.przyciskDodawania);
             this.Name = "NoweDanie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nowe danie";
@@ -148,13 +171,14 @@ namespace Obiady
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox nazwa;
         public System.Windows.Forms.NumericUpDown priorytet;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.ComboBox kategoria;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox skladniki;
+        public System.Windows.Forms.Button przyciskDodawania;
     }
 }
