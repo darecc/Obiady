@@ -36,6 +36,7 @@ namespace Obiady
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Text = this.Text + " " + Application.ProductVersion + " (" + Application.CompanyName + ")";
             ReadDishes();
             ReadSideDishes();
             ReadIngredients();
@@ -57,20 +58,27 @@ namespace Obiady
             maxDodatki = 0;
             foreach (Dish d in dania)
             {
-                ListViewItem it = new ListViewItem(d.name);
-                it.SubItems.Add(d.category);
-                it.SubItems.Add(d.count.ToString());
-                it.SubItems.Add(d.priority.ToString());
-                if (d.ingredients.Count > 0) {
-                    it.ForeColor = Color.Brown;
-                    it.BackColor = Color.Azure;
-                }
-                listaDan.Items.Add(it);
+                AddDishToList(d);
                 if (d.count > maxDania)
                     maxDania = d.count;
                 listaDan.ListViewItemSorter = new ListViewItemComparer(-1, rosnaco);
             }
         }
+
+        private void AddDishToList(Dish d)
+        {
+            ListViewItem it = new ListViewItem(d.name);
+            it.SubItems.Add(d.category);
+            it.SubItems.Add(d.count.ToString());
+            it.SubItems.Add(d.priority.ToString());
+            if (d.ingredients.Count > 0)
+            {
+                it.ForeColor = Color.Brown;
+                it.BackColor = Color.Azure;
+            }
+            listaDan.Items.Add(it);
+        }
+
         private void ShowSideDishes()
         {
             maxDodatki = 0;
@@ -193,7 +201,7 @@ namespace Obiady
             NoweDanie nowe = new NoweDanie();
             nowe.Text = "Nowy dodatek";
             nowe.kategoria.Enabled = false;
-            nowe.skladniki.Enabled = false;
+            nowe.skladniki.Enabled = true;
             nowe.przyciskDodawania.Enabled = true;
             DialogResult res = nowe.ShowDialog();
             if (res == DialogResult.OK)
@@ -202,6 +210,7 @@ namespace Obiady
                 SideDish d = new SideDish(nowe.nazwa.Text, 0, prior);
                 dodatki.Add(d);
                 ListViewItem it = new ListViewItem(nowe.nazwa.Text);
+                //TODO: napisać redagowanie składników
                 it.SubItems.Add("0");
                 it.SubItems.Add(prior.ToString());
                 listaDodatkow.Items.Add(it);
@@ -405,6 +414,79 @@ namespace Obiady
             {
                 ingredients = edycja.ingredients;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string napis = cSideDishfilter.Text;
+            if (napis.Length < 3)
+            {
+                return;
+            }
+            else
+            {
+                cSideDishfilter.Items.Add(napis);
+                OdfiltrujDodatki();
+            }
+        }
+
+        private void OdfiltrujDodatki()
+        {
+            listaDodatkow.Items.Clear();
+            foreach(SideDish s in dodatki)
+            {
+                bool tak = true;
+                //TODO: odfiltrowanie dodatków w pętli for do tych, które posiadają składniki z cSideDishFilter
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string napis = cDishFilter.Text;
+            if (napis.Length < 3)
+            {
+                return;
+            }
+            else
+            {
+                if (cDishFilter.Items.Contains(napis) == false)
+                {
+                    cDishFilter.Items.Add(napis);
+                    OdfiltrujDania();
+                }
+            }
+            cDishFilter.Text = "";
+        }
+
+        private void OdfiltrujDania()
+        {
+            listaDan.Items.Clear();
+            foreach (Dish s in dania)
+            {
+                bool tak = true;
+                foreach (string skladnik in cDishFilter.Items)
+                    if (s.ingredients.Contains(skladnik) == false)
+                        tak = false;
+                if (tak == true) 
+                {
+                    AddDishToList(s);  
+                }
+            }
+        }
+
+        private void RemoveFromList(object sender, EventArgs e)
+        {
+            int index = cDishFilter.SelectedIndex;
+            if (index != -1)
+            {
+                cDishFilter.Items.RemoveAt(index);
+                OdfiltrujDania();
+            }
+        }
+
+        private void EditSideDish(object sender, EventArgs e)
+        {
+            //TODO: napisać edycję Dodatku z możliwością redagowania składników
         }
     }
 }

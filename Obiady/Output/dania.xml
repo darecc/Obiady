@@ -12,7 +12,7 @@
   </Dish>
   <Dish>
     <name>Rosół z kury</name>
-    <count>1</count>
+    <count>2</count>
     <priority>3</priority>
     <ingredients>
       <string>kurczak</string>
@@ -291,7 +291,7 @@
   </Dish>
   <Dish>
     <name>Bób</name>
-    <count>0</count>
+    <count>1</count>
     <priority>3</priority>
     <ingredients>
       <string>bób</string>
@@ -437,7 +437,7 @@
   <Dish>
     <name>Zupa gulasz</name>
     <count>4</count>
-    <priority>2</priority>
+    <priority>3</priority>
     <ingredients>
       <string>wołowina</string>
       <string>grzyby</string>
@@ -448,6 +448,7 @@
       <string>marchew</string>
       <string>pietruszka</string>
       <string>seler</string>
+      <string />
     </ingredients>
     <category>zupa</category>
   </Dish>
@@ -650,11 +651,12 @@
   <Dish>
     <name>Flaczki cielęce</name>
     <count>0</count>
-    <priority>3</priority>
+    <priority>2</priority>
     <ingredients>
       <string>cielęcina</string>
       <string>marchew</string>
       <string>pietruszka</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
   </Dish>
@@ -789,8 +791,8 @@
   </Dish>
   <Dish>
     <name>Zapiekanka ziemniaczana z kurczakiem</name>
-    <count>0</count>
-    <priority>1</priority>
+    <count>1</count>
+    <priority>2</priority>
     <ingredients>
       <string>filet z kurczaka</string>
       <string>ziemniak</string>
@@ -798,6 +800,8 @@
       <string>czosnek</string>
       <string>cebula</string>
       <string>por</string>
+      <string>curry</string>
+      <string />
     </ingredients>
     <category>drób</category>
   </Dish>
@@ -817,12 +821,13 @@
   <Dish>
     <name>Kotlety mielone z mielonego z drobiu</name>
     <count>1</count>
-    <priority>1</priority>
+    <priority>2</priority>
     <ingredients>
       <string>mielone z kurczaka</string>
       <string>cebula</string>
       <string>bułka tarta</string>
       <string>jajko</string>
+      <string />
     </ingredients>
     <category>drób</category>
   </Dish>
@@ -851,5 +856,269 @@
       <string>olej</string>
     </ingredients>
     <category>ryba</category>
+  </Dish>
+  <Dish>
+    <name>Wołowina z papryką - kuchnia chińska str. 145</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>sos sojowy</string>
+      <string>olej</string>
+      <string>ketchup</string>
+      <string>mąka ryżowa</string>
+      <string>wódka</string>
+      <string>papryka</string>
+      <string />
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Wołowina z porami - kuchnia chińska str. 145</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>por</string>
+      <string>olej</string>
+      <string>czosnek</string>
+      <string>masło</string>
+      <string>mąka ryżowa</string>
+      <string>cukier</string>
+      <string>sos sojowy</string>
+      <string />
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Wołowina z cebulą - kuchnia chińska str. 149</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>cebula</string>
+      <string>sos sojowy</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+      <string>wódka</string>
+      <string>imbir</string>
+      <string />
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Kurczak z wątróbką, pieczarkami i groszkiem - kuchnia chińska str. 161</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kurczak</string>
+      <string>wątróbka z kurczaka</string>
+      <string>imbir</string>
+      <string>olej</string>
+      <string>masło</string>
+      <string>pieczarki</string>
+      <string>groszek zielony</string>
+      <string>sos sojowy</string>
+      <string>cukier</string>
+      <string>wódka</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Kurczak z zieloną fasolką - kuchnia chińska str. 163</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>filet z kurczaka</string>
+      <string>czosnek</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+      <string>papryka</string>
+      <string>masło</string>
+      <string>ocet</string>
+      <string>pomidor</string>
+      <string>wódka</string>
+      <string />
+      <string />
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Paella z kurczakiem - drób lekkostrawny str. 27</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kurczak</string>
+      <string>cebula</string>
+      <string>zielona papryka</string>
+      <string>pieczarki</string>
+      <string>pomidor</string>
+      <string>natka pietruszki</string>
+      <string>czosnek</string>
+      <string>oliwa</string>
+      <string>szafran</string>
+      <string>ryż</string>
+      <string>groszek zielony</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Pierogi z mąki ryżowej nadziewane kapustą z grzybami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>mąka ryżowa</string>
+      <string>mąka ziemniaczana</string>
+      <string>olej</string>
+      <string>kapusta kiszona</string>
+      <string>grzyby</string>
+      <string>cebula</string>
+    </ingredients>
+    <category>warzywa</category>
+  </Dish>
+  <Dish>
+    <name>Fasola z warzywami i wołowiną</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>fasola</string>
+      <string>wołowina</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Potrawka z wołowiny, bobu i warzy z grudnia 2021</name>
+    <count>1</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>ziemniak</string>
+      <string>bób</string>
+      <string>mąka ziemniaczana</string>
+      <string>marchew</string>
+      <string>pomidor</string>
+      <string>marchew</string>
+      <string>seler</string>
+      <string>cebula</string>
+      <string>pietruszka</string>
+      <string>olej</string>
+      <string />
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Klopsiki mięsne w pikantnym sosie</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>mielone z wołowiny</string>
+      <string>mielone z drobiu</string>
+      <string>cebula</string>
+      <string>jajko</string>
+      <string>śmietana</string>
+      <string>masło</string>
+      <string>mąka ryżowa</string>
+      <string>sos sojowy</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Duszony kurczak z warzywami</name>
+    <count>3</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>piersi z kurczaka</string>
+      <string>papryka</string>
+      <string>pieczarki</string>
+      <string>cebula</string>
+      <string>sos sojowy</string>
+      <string>kukurydza</string>
+      <string>śmietana</string>
+      <string>wino</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Pierś indycza po chińsku - przepisy teściowej (indyk)</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>indyk</string>
+      <string>papryka</string>
+      <string>por</string>
+      <string>pieczarki</string>
+      <string>sos sojowy</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+      <string />
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Smażone wątróbka wołowa - przepisy teściowej</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wątroba wołowa</string>
+      <string>śmietana</string>
+      <string>cebula</string>
+      <string>masło</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Befsztyk holszyński</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>cebula</string>
+      <string>masło</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Piersi z kurczaka z pieczarkami i porem</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>filet  kurczaka</string>
+      <string>pieczarki</string>
+      <string>olej</string>
+      <string>mąka ryżowa</string>
+    </ingredients>
+    <category>drób</category>
+  </Dish>
+  <Dish>
+    <name>Rumsztyk wołowy z cebulką</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>cebula</string>
+      <string>żółtka z jajka</string>
+      <string>olej</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Zapiekanka ziemniaczana z wołowiną</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>ziemniak</string>
+      <string>cebula</string>
+      <string>marchew</string>
+      <string>kurkuma</string>
+    </ingredients>
+    <category>wołowina</category>
   </Dish>
 </ArrayOfDish>

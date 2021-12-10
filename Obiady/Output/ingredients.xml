@@ -280,4 +280,64 @@
     <name>mintaj</name>
     <category>ryba</category>
   </Ingredient>
+  <Ingredient>
+    <name>sos sojowy</name>
+    <category>przyprawa</category>
+  </Ingredient>
+  <Ingredient>
+    <name>wódka</name>
+    <category>przyprawa</category>
+  </Ingredient>
+  <Ingredient>
+    <name>mąka ziemniaczana</name>
+    <category>mączne</category>
+  </Ingredient>
+  <Ingredient>
+    <name>cukier</name>
+    <category>pzyprawa</category>
+  </Ingredient>
+  <Ingredient>
+    <name>imbir</name>
+    <category>przyprawy</category>
+  </Ingredient>
+  <Ingredient>
+    <name>pieczarki</name>
+    <category>grzyby</category>
+  </Ingredient>
+  <Ingredient>
+    <name>szafran</name>
+    <category>przyprawa</category>
+  </Ingredient>
+  <Ingredient>
+    <name>natka pietruszki</name>
+    <category>warzywa</category>
+  </Ingredient>
+  <Ingredient>
+    <name>oliwa</name>
+    <category>tłuszcz</category>
+  </Ingredient>
+  <Ingredient>
+    <name>kasza gryczana</name>
+    <category>mączne</category>
+  </Ingredient>
+  <Ingredient>
+    <name>mąka ryżowa</name>
+    <category>mączne</category>
+  </Ingredient>
+  <Ingredient>
+    <name>mąka kukurydziana</name>
+    <category>mączne</category>
+  </Ingredient>
+  <Ingredient>
+    <name>kukurydza</name>
+    <category>warzywo</category>
+  </Ingredient>
+  <Ingredient>
+    <name>wino</name>
+    <category>przyprawy</category>
+  </Ingredient>
+  <Ingredient>
+    <name>wątroba wołowa</name>
+    <category>wołowina</category>
+  </Ingredient>
 </ArrayOfIngredient>

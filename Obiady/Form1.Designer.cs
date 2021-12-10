@@ -45,10 +45,17 @@ namespace Obiady
             this.dodajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajDodatekStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.edycjaDaniaStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.edycjaDodatkuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ingredientsStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.koniecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cSideDishfilter = new System.Windows.Forms.ComboBox();
+            this.cDishFilter = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +71,7 @@ namespace Obiady
             this.columnHeader3});
             this.listaDan.FullRowSelect = true;
             this.listaDan.HideSelection = false;
-            this.listaDan.Location = new System.Drawing.Point(12, 48);
+            this.listaDan.Location = new System.Drawing.Point(12, 66);
             this.listaDan.Name = "listaDan";
             this.listaDan.Size = new System.Drawing.Size(987, 365);
             this.listaDan.TabIndex = 0;
@@ -98,7 +105,7 @@ namespace Obiady
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 26);
+            this.label1.Location = new System.Drawing.Point(15, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 17);
             this.label1.TabIndex = 1;
@@ -107,7 +114,7 @@ namespace Obiady
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 416);
+            this.label2.Location = new System.Drawing.Point(14, 447);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 17);
             this.label2.TabIndex = 2;
@@ -121,7 +128,7 @@ namespace Obiady
             this.columnHeader5,
             this.columnHeader6});
             this.listaDodatkow.HideSelection = false;
-            this.listaDodatkow.Location = new System.Drawing.Point(12, 436);
+            this.listaDodatkow.Location = new System.Drawing.Point(12, 469);
             this.listaDodatkow.Name = "listaDodatkow";
             this.listaDodatkow.Size = new System.Drawing.Size(987, 219);
             this.listaDodatkow.TabIndex = 3;
@@ -154,11 +161,12 @@ namespace Obiady
             this.dodajToolStripMenuItem,
             this.dodajDodatekStripMenuItem1,
             this.edycjaDaniaStripMenuItem1,
+            this.edycjaDodatkuToolStripMenuItem1,
             this.ingredientsStripMenuItem1,
             this.koniecToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1015, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1017, 25);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -192,6 +200,13 @@ namespace Obiady
             this.edycjaDaniaStripMenuItem1.Text = "Edytuj danie";
             this.edycjaDaniaStripMenuItem1.Click += new System.EventHandler(this.EditDish);
             // 
+            // edycjaDodatkuToolStripMenuItem1
+            // 
+            this.edycjaDodatkuToolStripMenuItem1.Name = "edycjaDodatkuToolStripMenuItem1";
+            this.edycjaDodatkuToolStripMenuItem1.Size = new System.Drawing.Size(107, 21);
+            this.edycjaDodatkuToolStripMenuItem1.Text = "Edytuj dodatek";
+            this.edycjaDodatkuToolStripMenuItem1.Click += new System.EventHandler(this.EditSideDish);
+            // 
             // ingredientsStripMenuItem1
             // 
             this.ingredientsStripMenuItem1.Name = "ingredientsStripMenuItem1";
@@ -211,9 +226,9 @@ namespace Obiady
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 661);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 694);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1015, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1017, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -223,11 +238,76 @@ namespace Obiady
             this.statusLabel.Size = new System.Drawing.Size(131, 17);
             this.statusLabel.Text = "toolStripStatusLabel1";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Linen;
+            this.button1.Location = new System.Drawing.Point(702, 439);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 26);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Do filtra";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cSideDishfilter
+            // 
+            this.cSideDishfilter.FormattingEnabled = true;
+            this.cSideDishfilter.Location = new System.Drawing.Point(777, 439);
+            this.cSideDishfilter.Name = "cSideDishfilter";
+            this.cSideDishfilter.Size = new System.Drawing.Size(150, 25);
+            this.cSideDishfilter.TabIndex = 9;
+            // 
+            // cDishFilter
+            // 
+            this.cDishFilter.FormattingEnabled = true;
+            this.cDishFilter.Location = new System.Drawing.Point(789, 32);
+            this.cDishFilter.Name = "cDishFilter";
+            this.cDishFilter.Size = new System.Drawing.Size(142, 25);
+            this.cDishFilter.TabIndex = 13;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Linen;
+            this.button2.Location = new System.Drawing.Point(713, 32);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 26);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Do filtra";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Linen;
+            this.button3.Location = new System.Drawing.Point(934, 32);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(65, 26);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Usuń";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.RemoveFromList);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Linen;
+            this.button4.Location = new System.Drawing.Point(934, 439);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(65, 26);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Usuń";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 683);
+            this.ClientSize = new System.Drawing.Size(1017, 716);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.cDishFilter);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.cSideDishfilter);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.listaDodatkow);
             this.Controls.Add(this.label2);
@@ -269,6 +349,13 @@ namespace Obiady
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private System.Windows.Forms.ToolStripMenuItem ingredientsStripMenuItem1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cSideDishfilter;
+        private System.Windows.Forms.ToolStripMenuItem edycjaDodatkuToolStripMenuItem1;
+        private System.Windows.Forms.ComboBox cDishFilter;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

@@ -7,6 +7,10 @@
     <ApplicationIcon>wedding-dinner.ico</ApplicationIcon>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <Version>1.0.6</Version>
+    <AssemblyVersion>1.0.3.6</AssemblyVersion>
+    <FileVersion>1.0.3.6</FileVersion>
+    <Company>DC Software</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
