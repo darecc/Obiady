@@ -4,198 +4,310 @@
     <name>Ziemniaki</name>
     <count>2</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>ziemniak</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Kasza gryczana</name>
     <count>2</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>kasza gryczana</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Mizeria</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>ogórek</string>
+      <string>cebula</string>
+      <string>śmietana</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Kalafior</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>kalafior</string>
+      <string>masło</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Brokuły</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>brokuły</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Kasza jaglana</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>kasza jaglana</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Kuskus</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>kuskus</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Brukselka</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>brukselka</string>
+      <string>bułka tarta</string>
+      <string>masło</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Leczo z cukini</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>cukinia</string>
+      <string>pomidor</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+      <string>olej</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Czerwona kapusta zapiekana</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>kapusta czerwona</string>
+      <string>masło</string>
+      <string>cebula</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Buraczki</name>
     <count>2</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>burak</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Buraczki z chrzanem</name>
     <count>1</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>burak</string>
+      <string>chrzan</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Sałatka z pomidorów z cebulą i jogurtem</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>pomidor</string>
+      <string>cebula</string>
+      <string>jogurt</string>
+    </ingredients>
   </SideDish>
   <SideDish>
-    <name>Surówka</name>
+    <name>Surówka z kapusty kiszonej</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>kapusta kiszona</string>
+      <string>olej</string>
+      <string>cebula</string>
+    </ingredients>
   </SideDish>
   <SideDish>
-    <name>Surówka z kapusty kiszonej z cebulą w oleju</name>
+    <name>Surówka z kapusty kiszonej z cebulą z oliwą</name>
     <count>2</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>kapusta kiszona</string>
+      <string>oliwa</string>
+      <string>cebula</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Ogórki kiszone</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>ogórek kiszony</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Frytki ziemniaczane</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>ziemniak</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Kapusta kiszona</name>
     <count>1</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>kapusta kiszona</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Sos ciemny na mące gryczanej</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>mąka gryczana</string>
+      <string>masło</string>
+      <string>cebula</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Ser  żółty tarty</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>ser żółty</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Ser biały</name>
     <count>1</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>ser biały</string>
+      <string>jogurt</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Sos grzybowy</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>mąka ziemniaczana</string>
+      <string>grzyby</string>
+      <string>olej</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Cieciorka</name>
     <count>1</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>cieciorka</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Kasza jaglana</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>kasza jaglana</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Sałatka z fety i sałaty z ogórkiem kiszonym</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>sałata</string>
+      <string>ogórek kiszony</string>
+      <string>feta</string>
+      <string>oliwa</string>
+      <string>cebula</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Buraczki tarte zapiekane z jabłkiem</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>burak</string>
+      <string>masło</string>
+      <string>jabłko</string>
+      <string>mąka ryżowa</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Fasolka szparagowa</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>fasolka szparagowa</string>
+      <string>masło</string>
+      <string>bułka tarta</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Szparagi białe</name>
     <count>0</count>
     <priority>3</priority>
-    <ingredients />
+    <ingredients>
+      <string>szparag</string>
+      <string>masło</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Szparagi zielone</name>
     <count>0</count>
     <priority>3</priority>
-    <ingredients />
+    <ingredients>
+      <string>szparag</string>
+      <string>masło</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Smalec kaczy/gęsi</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>smalec kaczy</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Marchewka z groszkiem</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>marchew</string>
+      <string>groszek zielony</string>
+      <string>masło</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Sałatka z pomidorów, ogórka kiszonego i cebuli</name>
     <count>0</count>
     <priority>1</priority>
-    <ingredients />
+    <ingredients>
+      <string>pomidor</string>
+      <string>ogórek kiszony</string>
+      <string>cebula</string>
+      <string>oliwa</string>
+    </ingredients>
   </SideDish>
   <SideDish>
     <name>Kasza gryczana z warzywami</name>
     <count>0</count>
     <priority>2</priority>
-    <ingredients />
+    <ingredients>
+      <string>kasza gryczana</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>por</string>
+    </ingredients>
   </SideDish>
 </ArrayOfSideDish>

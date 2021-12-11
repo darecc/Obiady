@@ -340,4 +340,24 @@
     <name>wątroba wołowa</name>
     <category>wołowina</category>
   </Ingredient>
+  <Ingredient>
+    <name>kapusta czerwona</name>
+    <category>warzywa</category>
+  </Ingredient>
+  <Ingredient>
+    <name>smalec kaczy</name>
+    <category>tłuszcz</category>
+  </Ingredient>
+  <Ingredient>
+    <name>feta</name>
+    <category>nabiał</category>
+  </Ingredient>
+  <Ingredient>
+    <name>sałata</name>
+    <category>warzywo</category>
+  </Ingredient>
+  <Ingredient>
+    <name>chrzan</name>
+    <category>warzywo</category>
+  </Ingredient>
 </ArrayOfIngredient>

@@ -51,7 +51,7 @@ namespace Obiady
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.button1 = new System.Windows.Forms.Button();
-            this.cSideDishfilter = new System.Windows.Forms.ComboBox();
+            this.cSideDishFilter = new System.Windows.Forms.ComboBox();
             this.cDishFilter = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -212,7 +212,7 @@ namespace Obiady
             this.ingredientsStripMenuItem1.Name = "ingredientsStripMenuItem1";
             this.ingredientsStripMenuItem1.Size = new System.Drawing.Size(108, 21);
             this.ingredientsStripMenuItem1.Text = "Edytuj składniki";
-            this.ingredientsStripMenuItem1.Click += new System.EventHandler(this.EdytujSkladniki);
+            this.ingredientsStripMenuItem1.Click += new System.EventHandler(this.EditIngredients);
             // 
             // koniecToolStripMenuItem
             // 
@@ -249,13 +249,13 @@ namespace Obiady
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cSideDishfilter
+            // cSideDishFilter
             // 
-            this.cSideDishfilter.FormattingEnabled = true;
-            this.cSideDishfilter.Location = new System.Drawing.Point(777, 439);
-            this.cSideDishfilter.Name = "cSideDishfilter";
-            this.cSideDishfilter.Size = new System.Drawing.Size(150, 25);
-            this.cSideDishfilter.TabIndex = 9;
+            this.cSideDishFilter.FormattingEnabled = true;
+            this.cSideDishFilter.Location = new System.Drawing.Point(777, 439);
+            this.cSideDishFilter.Name = "cSideDishFilter";
+            this.cSideDishFilter.Size = new System.Drawing.Size(150, 25);
+            this.cSideDishFilter.TabIndex = 9;
             // 
             // cDishFilter
             // 
@@ -296,6 +296,7 @@ namespace Obiady
             this.button4.TabIndex = 15;
             this.button4.Text = "Usuń";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
@@ -306,7 +307,7 @@ namespace Obiady
             this.Controls.Add(this.button3);
             this.Controls.Add(this.cDishFilter);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.cSideDishfilter);
+            this.Controls.Add(this.cSideDishFilter);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.listaDodatkow);
@@ -350,7 +351,7 @@ namespace Obiady
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private System.Windows.Forms.ToolStripMenuItem ingredientsStripMenuItem1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cSideDishfilter;
+        private System.Windows.Forms.ComboBox cSideDishFilter;
         private System.Windows.Forms.ToolStripMenuItem edycjaDodatkuToolStripMenuItem1;
         private System.Windows.Forms.ComboBox cDishFilter;
         private System.Windows.Forms.Button button2;

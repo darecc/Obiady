@@ -61,8 +61,8 @@ namespace Obiady
                 AddDishToList(d);
                 if (d.count > maxDania)
                     maxDania = d.count;
-                listaDan.ListViewItemSorter = new ListViewItemComparer(-1, rosnaco);
             }
+            listaDan.ListViewItemSorter = new ListViewItemComparer(-1, rosnaco);
         }
 
         private void AddDishToList(Dish d)
@@ -84,14 +84,9 @@ namespace Obiady
             maxDodatki = 0;
             foreach (SideDish d in dodatki)
             {
-                ListViewItem it = new ListViewItem(d.name);
-                it.SubItems.Add(d.count.ToString());
-                it.SubItems.Add(d.priority.ToString());
-                listaDodatkow.Items.Add(it);
-                if (d.count > maxDodatki)
-                    maxDodatki = d.count;
-                listaDodatkow.ListViewItemSorter = new ListViewItemComparer2(-1, rosnaco);
+                AddSideDishToList(d);   
             }
+            listaDodatkow.ListViewItemSorter = new ListViewItemComparer2(-1, rosnaco);
         }
 
         private void ReadSideDishes()
@@ -210,9 +205,21 @@ namespace Obiady
                 SideDish d = new SideDish(nowe.nazwa.Text, 0, prior);
                 dodatki.Add(d);
                 ListViewItem it = new ListViewItem(nowe.nazwa.Text);
-                //TODO: napisać redagowanie składników
+                string skladniki = nowe.skladniki.Text;
+                d.ingredients = new List<string>();
+                string[] linie = skladniki.Split(System.Environment.NewLine);
+                d.ingredients = new List<string>();
+                foreach (string s in linie)
+                    d.ingredients.Add(s);
+                dodatki.Add(d);
                 it.SubItems.Add("0");
                 it.SubItems.Add(prior.ToString());
+                it.SubItems.Add(prior.ToString());
+                if (linie.Length > 0)
+                {
+                    it.ForeColor = Color.Brown;
+                    it.BackColor = Color.Coral;
+                }
                 listaDodatkow.Items.Add(it);
                 refreshStrip();
             }
@@ -405,7 +412,7 @@ namespace Obiady
                 }
         }
 
-        private void EdytujSkladniki(object sender, EventArgs e)
+        private void EditIngredients(object sender, EventArgs e)
         {
             EditIngredients edycja = new EditIngredients();
             edycja.ingredients = ingredients;
@@ -418,26 +425,45 @@ namespace Obiady
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string napis = cSideDishfilter.Text;
+            string napis = cSideDishFilter.Text;
             if (napis.Length < 3)
             {
                 return;
             }
             else
             {
-                cSideDishfilter.Items.Add(napis);
-                OdfiltrujDodatki();
+                cSideDishFilter.Items.Add(napis);
+                FilterSideDishes();
             }
         }
 
-        private void OdfiltrujDodatki()
+        private void FilterSideDishes()
         {
             listaDodatkow.Items.Clear();
             foreach(SideDish s in dodatki)
             {
                 bool tak = true;
-                //TODO: odfiltrowanie dodatków w pętli for do tych, które posiadają składniki z cSideDishFilter
+                foreach (string skladnik in cSideDishFilter.Items)
+                    if (s.ingredients.Contains(skladnik) == false)
+                        tak = false;
+                if (tak == true)
+                {
+                    AddSideDishToList(s);
+                }
             }
+        }
+
+        private void AddSideDishToList(SideDish d)
+        {
+            ListViewItem it = new ListViewItem(d.name);
+            it.SubItems.Add(d.count.ToString());
+            it.SubItems.Add(d.priority.ToString());
+            if (d.ingredients.Count > 0)
+            {
+                it.ForeColor = Color.Brown;
+                it.BackColor = Color.Azure;
+            }
+            listaDodatkow.Items.Add(it);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -452,13 +478,13 @@ namespace Obiady
                 if (cDishFilter.Items.Contains(napis) == false)
                 {
                     cDishFilter.Items.Add(napis);
-                    OdfiltrujDania();
+                    FilterDishes();
                 }
             }
             cDishFilter.Text = "";
         }
 
-        private void OdfiltrujDania()
+        private void FilterDishes()
         {
             listaDan.Items.Clear();
             foreach (Dish s in dania)
@@ -480,13 +506,57 @@ namespace Obiady
             if (index != -1)
             {
                 cDishFilter.Items.RemoveAt(index);
-                OdfiltrujDania();
+                FilterDishes();
             }
         }
 
         private void EditSideDish(object sender, EventArgs e)
         {
-            //TODO: napisać edycję Dodatku z możliwością redagowania składników
+            if (listaDodatkow.SelectedItems.Count == 0)
+                return;
+            string nazwa = listaDodatkow.SelectedItems[0].Text;
+            NoweDanie edycja = new NoweDanie();
+            edycja.Text = "Edycja dania";
+            edycja.kategoria.Enabled = false;
+            edycja.skladniki.Enabled = true;
+            edycja.nazwa.Text = nazwa;
+            SideDish danie = null;
+            foreach (SideDish d in dodatki)
+                if (d.name.Equals(nazwa))
+                    danie = d;
+            foreach (string s in danie.ingredients)
+                edycja.skladniki.Text = edycja.skladniki.Text + s + System.Environment.NewLine;
+            int prior = int.Parse(listaDodatkow.SelectedItems[0].SubItems[2].Text);
+            edycja.priorytet.Value = prior;
+            DialogResult res = edycja.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                listaDodatkow.SelectedItems[0].Text = edycja.nazwa.Text;
+                listaDodatkow.SelectedItems[0].SubItems[2].Text = edycja.priorytet.Value.ToString();
+                for (int i = 0; i < dodatki.Count; i++)
+                    if (dodatki[i].name.Equals(nazwa))
+                    {
+                        dodatki[i].name = listaDodatkow.SelectedItems[0].Text;
+                        dodatki[i].priority = (int)edycja.priorytet.Value;
+                        string skladniki = edycja.skladniki.Text;
+                        string[] linie = skladniki.Split(System.Environment.NewLine);
+                        if (linie.Length > 0)
+                            listaDodatkow.SelectedItems[0].BackColor = Color.Coral;
+                        dodatki[i].ingredients = new List<string>();
+                        foreach (string s in linie)
+                            dodatki[i].ingredients.Add(s);
+                    }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int index = cSideDishFilter.SelectedIndex;
+            if (index != -1)
+            {
+                cSideDishFilter.Items.RemoveAt(index);
+                FilterSideDishes();
+            }
         }
     }
 }

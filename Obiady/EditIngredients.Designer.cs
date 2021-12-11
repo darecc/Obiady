@@ -74,6 +74,7 @@ namespace Obiady
             this.ingredientsList.Location = new System.Drawing.Point(12, 23);
             this.ingredientsList.Name = "ingredientsList";
             this.ingredientsList.Size = new System.Drawing.Size(566, 361);
+            this.ingredientsList.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.ingredientsList.TabIndex = 2;
             this.ingredientsList.UseCompatibleStateImageBehavior = false;
             this.ingredientsList.View = System.Windows.Forms.View.Details;

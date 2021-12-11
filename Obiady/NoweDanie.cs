@@ -31,6 +31,8 @@ namespace Obiady
         private void NoweDanie_Load(object sender, EventArgs e)
         {
             nazwa.Focus();
+            if (kategoria.Enabled == false)
+                przyciskDodawania.Enabled = true;
         }
 
         private void SelectionChange(object sender, EventArgs e)
