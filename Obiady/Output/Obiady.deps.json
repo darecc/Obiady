@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Obiady/1.0.7": {
+      "Obiady/1.0.8": {
         "runtime": {
           "Obiady.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "Obiady/1.0.7": {
+    "Obiady/1.0.8": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

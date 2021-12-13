@@ -124,7 +124,19 @@ namespace Obiady
                     danie.count++;
                     ListViewItem it = listaDan.SelectedItems[0];
                     it.SubItems[2].Text = danie.count.ToString();
+                    AddDishToFile(danie);
                 }
+        }
+
+        private void AddDishToFile(Dish danie)
+        {
+            FileStream fs = new FileStream("obiady.txt", FileMode.Append);
+            StreamWriter sr = new StreamWriter(fs, Encoding.Default);
+            string s = System.Environment.NewLine + danie.name + ";" + DateTime.Now.ToShortDateString();
+            sr.Write(s);
+            sr.Close();
+            fs.Close();
+
         }
 
         private void WriteAll(object sender, EventArgs e)
@@ -432,9 +444,22 @@ namespace Obiady
             }
             else
             {
+                bool jest = false;
+                foreach (Ingredient ing in ingredients)
+                    if (ing.name.Equals(napis))
+                    {
+                        jest = true;
+                        break;
+                    }
+                if (jest == false)
+                {
+                    cSideDishFilter.Text = "";
+                    return;
+                }
                 cSideDishFilter.Items.Add(napis);
                 FilterSideDishes();
             }
+            cSideDishFilter.Text = "";
         }
 
         private void FilterSideDishes()
@@ -475,6 +500,19 @@ namespace Obiady
             }
             else
             {
+                // sprawdzenie czy napis jest na liście składników
+                bool jest = false;
+                foreach(Ingredient ing in ingredients)
+                    if (ing.name.Equals(napis))
+                    {
+                        jest = true;
+                        break;
+                    }
+                if (jest == false)
+                {
+                    cDishFilter.Text = "";
+                    return;
+                }
                 if (cDishFilter.Items.Contains(napis) == false)
                 {
                     cDishFilter.Items.Add(napis);

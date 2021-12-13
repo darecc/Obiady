@@ -360,4 +360,8 @@
     <name>chrzan</name>
     <category>warzywo</category>
   </Ingredient>
+  <Ingredient>
+    <name>ryż</name>
+    <category>mączne</category>
+  </Ingredient>
 </ArrayOfIngredient>

@@ -55,7 +55,6 @@
       <string>seler</string>
       <string>por</string>
       <string>grzyby</string>
-      <string />
     </ingredients>
     <category>drób</category>
   </Dish>
@@ -300,13 +299,15 @@
     <category>warzywa</category>
   </Dish>
   <Dish>
-    <name>Śledź z jogurtem i cebulą</name>
+    <name>Śledź w śmietanie z ziemniakami</name>
     <count>0</count>
     <priority>2</priority>
     <ingredients>
       <string>śledź</string>
-      <string>jogurt</string>
+      <string>śmietana</string>
       <string>cebula</string>
+      <string>ziemniak</string>
+      <string />
     </ingredients>
     <category>ryba</category>
   </Dish>
@@ -702,7 +703,7 @@
   </Dish>
   <Dish>
     <name>Zupa jarzynowa z sercami z kurczaka</name>
-    <count>0</count>
+    <count>1</count>
     <priority>1</priority>
     <ingredients>
       <string>serca z kurczaka</string>
@@ -992,7 +993,7 @@
     <category>wołowina</category>
   </Dish>
   <Dish>
-    <name>Potrawka z wołowiny, bobu i warzy z grudnia 2021</name>
+    <name>Potrawka z wołowiny, bobu i warzyw z grudnia 2021</name>
     <count>1</count>
     <priority>2</priority>
     <ingredients>
@@ -1118,6 +1119,21 @@
       <string>cebula</string>
       <string>marchew</string>
       <string>kurkuma</string>
+    </ingredients>
+    <category>wołowina</category>
+  </Dish>
+  <Dish>
+    <name>Sznycel wiedeński</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>cebula</string>
+      <string>mąka ryżowa</string>
+      <string>jajko</string>
+      <string>masło</string>
+      <string>olej</string>
+      <string>bułka tarta</string>
     </ingredients>
     <category>wołowina</category>
   </Dish>

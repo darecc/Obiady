@@ -310,4 +310,48 @@
       <string>por</string>
     </ingredients>
   </SideDish>
+  <SideDish>
+    <name>Sos ciemny</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>cebula</string>
+      <string>masło</string>
+      <string>olej</string>
+      <string>mąka ryżowa</string>
+    </ingredients>
+  </SideDish>
+  <SideDish>
+    <name>Sos ciemny</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>cebula</string>
+      <string>masło</string>
+      <string>olej</string>
+      <string>mąka ryżowa</string>
+    </ingredients>
+  </SideDish>
+  <SideDish>
+    <name>Sos chrzanowy</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>chrzan</string>
+      <string>masło</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+    </ingredients>
+  </SideDish>
+  <SideDish>
+    <name>Sos chrzanowy</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>chrzan</string>
+      <string>masło</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+    </ingredients>
+  </SideDish>
 </ArrayOfSideDish>
