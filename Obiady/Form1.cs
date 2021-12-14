@@ -76,6 +76,7 @@ namespace Obiady
                 it.ForeColor = Color.Brown;
                 it.BackColor = Color.Azure;
             }
+            it.SubItems.Add(d.description);
             listaDan.Items.Add(it);
         }
 
@@ -132,7 +133,7 @@ namespace Obiady
         {
             FileStream fs = new FileStream("obiady.txt", FileMode.Append);
             StreamWriter sr = new StreamWriter(fs, Encoding.Default);
-            string s = System.Environment.NewLine + danie.name + ";" + DateTime.Now.ToShortDateString();
+            string s = System.Environment.NewLine + DateTime.Now.ToShortDateString() + ";" + danie.name;
             sr.Write(s);
             sr.Close();
             fs.Close();
@@ -141,6 +142,7 @@ namespace Obiady
 
         private void WriteAll(object sender, EventArgs e)
         {
+            Okienko okienko = new Okienko("Zapisanie plików z danymi", "Zapisano wszystkie dane...","");
             WriteDishes();
             WriteSideDishes();
             WriteIngredients();
@@ -177,15 +179,17 @@ namespace Obiady
             nowe.kategoria.Enabled = true;
             nowe.skladniki.Enabled = true;
             nowe.przyciskDodawania.Enabled = false;
+            nowe.description.Enabled = true;
             DialogResult res = nowe.ShowDialog();
             if (res == DialogResult.OK)
             {
                 int prior = (int)nowe.priorytet.Value;
-                Dish d = new Dish(nowe.nazwa.Text, 0, prior, nowe.kategoria.SelectedItem.ToString());
+                Dish d = new Dish(nowe.nazwa.Text, 0, prior, nowe.kategoria.SelectedItem.ToString(), "");
                 string skladniki = nowe.skladniki.Text;
                 d.ingredients = new List<string>();
                 string[] linie = skladniki.Split(System.Environment.NewLine);
                 d.ingredients = new List<string>();
+                d.description = nowe.description.Text.Trim();
                 foreach (string s in linie)
                     d.ingredients.Add(s);
                 dania.Add(d);
@@ -193,6 +197,7 @@ namespace Obiady
                 it.SubItems.Add(nowe.kategoria.SelectedItem.ToString());
                 it.SubItems.Add("0");
                 it.SubItems.Add(prior.ToString());
+                it.SubItems.Add(nowe.description.Text);
                 if (linie.Length > 0)
                 {
                     it.ForeColor = Color.Brown;
@@ -210,6 +215,7 @@ namespace Obiady
             nowe.kategoria.Enabled = false;
             nowe.skladniki.Enabled = true;
             nowe.przyciskDodawania.Enabled = true;
+            nowe.description.Enabled = false;
             DialogResult res = nowe.ShowDialog();
             if (res == DialogResult.OK)
             {
@@ -364,20 +370,23 @@ namespace Obiady
         {
             if (listaDan.SelectedItems.Count == 0)
                 return;
-            string nazwa = listaDan.SelectedItems[0].Text;
+            ListViewItem it = listaDan.SelectedItems[0];
+            string nazwa = it.Text;
             NoweDanie edycja = new NoweDanie();
             edycja.Text = "Edycja dania";
             edycja.kategoria.Enabled = true;
             edycja.skladniki.Enabled = true;
+            edycja.description.Enabled = true;
             edycja.nazwa.Text = nazwa;
+            edycja.description.Text = it.SubItems[4].Text;
             Dish danie = null;
             foreach (Dish d in dania)
                 if (d.name.Equals(nazwa))
                     danie = d;
             foreach (string s in danie.ingredients)
                 edycja.skladniki.Text = edycja.skladniki.Text + s + System.Environment.NewLine;
-            string kategoria = listaDan.SelectedItems[0].SubItems[1].Text;
-            int prior = int.Parse(listaDan.SelectedItems[0].SubItems[3].Text);
+            string kategoria = it.SubItems[1].Text;
+            int prior = int.Parse(it.SubItems[3].Text);
             edycja.priorytet.Value = prior;
             for(int i = 0; i < edycja.kategoria.Items.Count; i++)
                 if (edycja.kategoria.Items[i].ToString().Equals(kategoria))
@@ -392,7 +401,8 @@ namespace Obiady
                 if (edycja.kategoria.SelectedItem != null)
                     listaDan.SelectedItems[0].SubItems[1].Text = edycja.kategoria.SelectedItem.ToString();
                 listaDan.SelectedItems[0].SubItems[3].Text = edycja.priorytet.Value.ToString();
-                for(int i = 0; i < dania.Count; i++)
+                listaDan.SelectedItems[0].SubItems[4].Text = edycja.description.Text.Trim();
+                for (int i = 0; i < dania.Count; i++)
                     if (dania[i].name.Equals(nazwa))
                     {
                         dania[i].name = listaDan.SelectedItems[0].Text;
@@ -406,6 +416,7 @@ namespace Obiady
                         dania[i].ingredients = new List<string>();
                         foreach (string s in linie)
                             dania[i].ingredients.Add(s);
+                        dania[i].description = edycja.description.Text.Trim();
                     }
             }
         }
@@ -557,6 +568,7 @@ namespace Obiady
             edycja.Text = "Edycja dania";
             edycja.kategoria.Enabled = false;
             edycja.skladniki.Enabled = true;
+            edycja.description.Enabled = false;
             edycja.nazwa.Text = nazwa;
             SideDish danie = null;
             foreach (SideDish d in dodatki)

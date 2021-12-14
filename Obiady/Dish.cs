@@ -13,17 +13,18 @@ namespace Obiady
         public int priority;
         public List<string> ingredients;
         public string category;
+        public string description;
 
         public Dish() { }
 
-        public Dish(string name, int count, int priority, string category)
+        public Dish(string name, int count, int priority, string category, string description)
         {
             this.name = name;
             this.count = count;
             this.priority = priority;
             this.category = category;
             this.ingredients = new List<string>();
+            this.description = description;
         }
-
     }
 }

@@ -364,4 +364,8 @@
     <name>ryż</name>
     <category>mączne</category>
   </Ingredient>
+  <Ingredient>
+    <name>żółtko</name>
+    <category>nabiał</category>
+  </Ingredient>
 </ArrayOfIngredient>

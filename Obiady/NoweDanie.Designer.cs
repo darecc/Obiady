@@ -38,6 +38,8 @@ namespace Obiady
             this.label2 = new System.Windows.Forms.Label();
             this.skladniki = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.description = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.priorytet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@ namespace Obiady
             this.przyciskDodawania.BackColor = System.Drawing.Color.Bisque;
             this.przyciskDodawania.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.przyciskDodawania.Enabled = false;
-            this.przyciskDodawania.Location = new System.Drawing.Point(630, 103);
+            this.przyciskDodawania.Location = new System.Drawing.Point(630, 155);
             this.przyciskDodawania.Name = "przyciskDodawania";
             this.przyciskDodawania.Size = new System.Drawing.Size(56, 27);
             this.przyciskDodawania.TabIndex = 3;
@@ -58,7 +60,7 @@ namespace Obiady
             // 
             this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(561, 103);
+            this.button2.Location = new System.Drawing.Point(561, 155);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 27);
             this.button2.TabIndex = 4;
@@ -134,7 +136,7 @@ namespace Obiady
             this.skladniki.Location = new System.Drawing.Point(203, 49);
             this.skladniki.Multiline = true;
             this.skladniki.Name = "skladniki";
-            this.skladniki.Size = new System.Drawing.Size(347, 81);
+            this.skladniki.Size = new System.Drawing.Size(165, 128);
             this.skladniki.TabIndex = 7;
             // 
             // label3
@@ -146,11 +148,30 @@ namespace Obiady
             this.label3.TabIndex = 8;
             this.label3.Text = "Składniki";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(391, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 17);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Opis:";
+            // 
+            // description
+            // 
+            this.description.Location = new System.Drawing.Point(374, 70);
+            this.description.Multiline = true;
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(310, 79);
+            this.description.TabIndex = 10;
+            // 
             // NoweDanie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 142);
+            this.ClientSize = new System.Drawing.Size(696, 189);
+            this.Controls.Add(this.description);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.skladniki);
             this.Controls.Add(this.label2);
@@ -180,5 +201,7 @@ namespace Obiady
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox skladniki;
         public System.Windows.Forms.Button przyciskDodawania;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox description;
     }
 }

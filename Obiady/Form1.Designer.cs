@@ -56,6 +56,7 @@ namespace Obiady
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +69,8 @@ namespace Obiady
             this.columnHeader1,
             this.columnHeader7,
             this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader8});
             this.listaDan.FullRowSelect = true;
             this.listaDan.HideSelection = false;
             this.listaDan.Location = new System.Drawing.Point(12, 66);
@@ -83,7 +85,7 @@ namespace Obiady
             // columnHeader1
             // 
             this.columnHeader1.Text = "Nazwa";
-            this.columnHeader1.Width = 710;
+            this.columnHeader1.Width = 600;
             // 
             // columnHeader7
             // 
@@ -298,6 +300,11 @@ namespace Obiady
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Opis";
+            this.columnHeader8.Width = 120;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -357,6 +364,7 @@ namespace Obiady
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
     }
 }
 
