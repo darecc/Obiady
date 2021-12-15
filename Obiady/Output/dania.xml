@@ -652,8 +652,10 @@
       <string>cielęcina</string>
       <string>marchew</string>
       <string>pietruszka</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
+    <description>Trudno dostępne</description>
   </Dish>
   <Dish>
     <name>Flaczki wołowo-drobiowe</name>
@@ -850,7 +852,7 @@
     <category>ryba</category>
   </Dish>
   <Dish>
-    <name>Wołowina z papryką - kuchnia chińska str. 145</name>
+    <name>Wołowina z papryką</name>
     <count>0</count>
     <priority>1</priority>
     <ingredients>
@@ -861,11 +863,13 @@
       <string>mąka ryżowa</string>
       <string>wódka</string>
       <string>papryka</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
+    <description>kuchnia chińska str. 145</description>
   </Dish>
   <Dish>
-    <name>Wołowina z porami - kuchnia chińska str. 145</name>
+    <name>Wołowina z porami</name>
     <count>0</count>
     <priority>1</priority>
     <ingredients>
@@ -877,8 +881,10 @@
       <string>mąka ryżowa</string>
       <string>cukier</string>
       <string>sos sojowy</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
+    <description>kuchnia chińska str. 145</description>
   </Dish>
   <Dish>
     <name>Wołowina z cebulą</name>
@@ -1161,5 +1167,41 @@
     </ingredients>
     <category>wołowina</category>
     <description>Karta 9/11 z listy kart teściowej</description>
+  </Dish>
+  <Dish>
+    <name>Gołąbki z pikantnymi warzywami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>mielone z wołowiny</string>
+      <string>kapusta</string>
+      <string>pomidor</string>
+      <string>cebula</string>
+      <string>jajko</string>
+      <string>olej</string>
+      <string>kapusta kiszona</string>
+      <string>papryka</string>
+      <string>śmietana</string>
+    </ingredients>
+    <category>wołowina</category>
+    <description>Karta 50/14 z kolekcji teściowej</description>
+  </Dish>
+  <Dish>
+    <name>Piersi indycze z warzywami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>piersi indycze</string>
+      <string>brukselka</string>
+      <string>kalafior</string>
+      <string>olej</string>
+      <string>wino</string>
+      <string>natka pietruszki</string>
+      <string>masło</string>
+      <string>śmietana</string>
+      <string>czosnek</string>
+    </ingredients>
+    <category>drób</category>
+    <description>Karta 5/14 z listy teściowej</description>
   </Dish>
 </ArrayOfDish>

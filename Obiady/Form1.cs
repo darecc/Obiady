@@ -143,6 +143,7 @@ namespace Obiady
         private void WriteAll(object sender, EventArgs e)
         {
             Okienko okienko = new Okienko("Zapisanie plików z danymi", "Zapisano wszystkie dane...","");
+            okienko.Show();
             WriteDishes();
             WriteSideDishes();
             WriteIngredients();
@@ -205,6 +206,8 @@ namespace Obiady
                 }
                 listaDan.Items.Add(it);
                 refreshStrip();
+                Okienko okienko = new Okienko("Dodanie dania", d.name, "");
+                okienko.Show();
             }
         }
 

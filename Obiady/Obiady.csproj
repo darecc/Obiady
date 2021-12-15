@@ -7,9 +7,9 @@
     <ApplicationIcon>wedding-dinner.ico</ApplicationIcon>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <Version>1.0.8</Version>
-    <AssemblyVersion>1.0.3.7</AssemblyVersion>
-    <FileVersion>1.0.3.6</FileVersion>
+    <Version>1.0.10</Version>
+    <AssemblyVersion>1.0.1.10</AssemblyVersion>
+    <FileVersion>1.0.1.10</FileVersion>
     <Company>DC Software</Company>
   </PropertyGroup>
 
