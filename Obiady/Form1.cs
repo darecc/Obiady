@@ -272,8 +272,8 @@ namespace Obiady
                     int a2 = int.Parse(((ListViewItem)y).SubItems[2].Text) + 1; // ile razy
                     int b1 = int.Parse(((ListViewItem)x).SubItems[3].Text); // priorytet
                     int b2 = int.Parse(((ListViewItem)y).SubItems[3].Text); // priorytet
-                    double da1 = (a1 - maxDodatki) - b1 * (a1 + 0.3) / 3;
-                    double da2 = (a2 - maxDodatki) - b2 * (a2 + 0.3) / 3;
+                    double da1 = (a1 - maxDodatki) - b1 * (maxDania - a1 + 0.5) / 3;
+                    double da2 = (a2 - maxDodatki) - b2 * (maxDania - a2 + 0.5) / 3;
                     if (da1 >= da2)
                         return 1;
                     else

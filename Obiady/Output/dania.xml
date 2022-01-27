@@ -205,7 +205,7 @@
   </Dish>
   <Dish>
     <name>Kapuśniak z kapusty włoskiej z żołądkami drobiowymi</name>
-    <count>0</count>
+    <count>2</count>
     <priority>1</priority>
     <ingredients>
       <string>żołądki z kurczaka</string>
@@ -260,8 +260,8 @@
   </Dish>
   <Dish>
     <name>Zupa ogórkowa z żołądkami drobiowymi</name>
-    <count>0</count>
-    <priority>1</priority>
+    <count>1</count>
+    <priority>2</priority>
     <ingredients>
       <string>ogórek kiszony</string>
       <string>serca z kurczaka</string>
@@ -269,8 +269,10 @@
       <string>pietruszka</string>
       <string>seler</string>
       <string>ziemniak</string>
+      <string />
     </ingredients>
     <category>drób</category>
+    <description />
   </Dish>
   <Dish>
     <name>Papryka nadziewana z mięsem drobiowym</name>
@@ -327,7 +329,7 @@
   </Dish>
   <Dish>
     <name>Królik zapiekany z warzywami</name>
-    <count>0</count>
+    <count>2</count>
     <priority>2</priority>
     <ingredients>
       <string>królik</string>
@@ -351,7 +353,7 @@
   </Dish>
   <Dish>
     <name>Placki ziemniaczane</name>
-    <count>0</count>
+    <count>1</count>
     <priority>1</priority>
     <ingredients>
       <string>ziemniak</string>
@@ -452,7 +454,7 @@
   </Dish>
   <Dish>
     <name>Zupa fasolowa z żołądkami z kurczaka</name>
-    <count>0</count>
+    <count>3</count>
     <priority>2</priority>
     <ingredients>
       <string>żołądki z kurczaka</string>
@@ -579,8 +581,8 @@
   </Dish>
   <Dish>
     <name>Zupa grzybowa na sercach kurzych</name>
-    <count>0</count>
-    <priority>1</priority>
+    <count>2</count>
+    <priority>2</priority>
     <ingredients>
       <string>serca z kurczaka</string>
       <string>grzyby</string>
@@ -589,8 +591,10 @@
       <string>marchew</string>
       <string>pietruszka</string>
       <string>seler</string>
+      <string />
     </ingredients>
     <category>zupa</category>
+    <description />
   </Dish>
   <Dish>
     <name>Barszcz ukraiński z fasolą i włoszczyzną na żołądkach lub szynce wołowej wędzonej</name>
@@ -699,7 +703,7 @@
   </Dish>
   <Dish>
     <name>Zupa jarzynowa z sercami z kurczaka</name>
-    <count>2</count>
+    <count>4</count>
     <priority>1</priority>
     <ingredients>
       <string>serca z kurczaka</string>
@@ -799,6 +803,7 @@
       <string>curry</string>
     </ingredients>
     <category>drób</category>
+    <description />
   </Dish>
   <Dish>
     <name>Grzyby świeże z ziemniakami</name>
@@ -827,7 +832,7 @@
   </Dish>
   <Dish>
     <name>Pulpety z wołowiny w sosie grzybowym</name>
-    <count>0</count>
+    <count>4</count>
     <priority>2</priority>
     <ingredients>
       <string>mielone wołowe</string>
@@ -1014,7 +1019,7 @@
   <Dish>
     <name>Klopsiki mięsne w pikantnym sosie</name>
     <count>0</count>
-    <priority>1</priority>
+    <priority>2</priority>
     <ingredients>
       <string>mielone z wołowiny</string>
       <string>mielone z drobiu</string>
@@ -1024,8 +1029,10 @@
       <string>masło</string>
       <string>mąka ryżowa</string>
       <string>sos sojowy</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
+    <description>karta 18/8</description>
   </Dish>
   <Dish>
     <name>Duszony kurczak z warzywami</name>
@@ -1040,11 +1047,13 @@
       <string>kukurydza</string>
       <string>śmietana</string>
       <string>wino</string>
+      <string />
     </ingredients>
     <category>drób</category>
+    <description>karta 35/4</description>
   </Dish>
   <Dish>
-    <name>Pierś indycza po chińsku - przepisy teściowej (indyk)</name>
+    <name>Pierś indycza po chińsku</name>
     <count>0</count>
     <priority>1</priority>
     <ingredients>
@@ -1055,11 +1064,13 @@
       <string>sos sojowy</string>
       <string>mąka ryżowa</string>
       <string>olej</string>
+      <string />
     </ingredients>
     <category>drób</category>
+    <description>karta 16/16</description>
   </Dish>
   <Dish>
-    <name>Smażone wątróbka wołowa - przepisy teściowej</name>
+    <name>Smażona wątróbka wołowa</name>
     <count>0</count>
     <priority>1</priority>
     <ingredients>
@@ -1069,8 +1080,10 @@
       <string>masło</string>
       <string>mąka ryżowa</string>
       <string>olej</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
+    <description>karta 57/9</description>
   </Dish>
   <Dish>
     <name>Befsztyk holszyński</name>
@@ -1080,8 +1093,10 @@
       <string>wołowina</string>
       <string>cebula</string>
       <string>masło</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
+    <description>karta 16/10</description>
   </Dish>
   <Dish>
     <name>Piersi z kurczaka z pieczarkami i porem</name>
@@ -1148,13 +1163,15 @@
       <string>mąka ziemniaczana</string>
       <string>śmietana</string>
       <string>chrzan</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
+    <description>karta 15/9</description>
   </Dish>
   <Dish>
     <name>Ragout cielęce ze szparagami</name>
     <count>0</count>
-    <priority>2</priority>
+    <priority>3</priority>
     <ingredients>
       <string>cielęcina</string>
       <string>masło</string>
@@ -1163,6 +1180,7 @@
       <string>śmietana</string>
       <string>żółtko</string>
       <string>natka pietruszki</string>
+      <string />
       <string />
     </ingredients>
     <category>wołowina</category>
@@ -1182,6 +1200,7 @@
       <string>kapusta kiszona</string>
       <string>papryka</string>
       <string>śmietana</string>
+      <string />
     </ingredients>
     <category>wołowina</category>
     <description>Karta 50/14 z kolekcji teściowej</description>
@@ -1203,5 +1222,368 @@
     </ingredients>
     <category>drób</category>
     <description>Karta 5/14 z listy teściowej</description>
+  </Dish>
+  <Dish>
+    <name>Zapiekanka ziemniaczana z kurczakiem i pieczarkami</name>
+    <count>2</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>ziemniak</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>seler</string>
+      <string>cebula</string>
+      <string>pieczarki</string>
+      <string>olej</string>
+      <string>mąka ziemniaczana</string>
+      <string>papryka</string>
+      <string>brukselka</string>
+      <string />
+    </ingredients>
+    <category>drób</category>
+    <description />
+  </Dish>
+  <Dish>
+    <name>Zrazy wołowe z ziemniakami</name>
+    <count>2</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>ziemniak</string>
+      <string>cebula</string>
+      <string />
+    </ingredients>
+    <category>wołowina</category>
+    <description>Zrazy wołowe należy podsmażyć 
+osobno ugotować (12 minut) ziemniaki. Potem podsmażyć ziemniaki i cebulę. Można dodać pieczarki, buraczki, marchewkę z groszkiem</description>
+  </Dish>
+  <Dish>
+    <name>Zrazy wołowe z cebulą w sosie grzybowym</name>
+    <count>1</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>cebula</string>
+      <string>grzyby</string>
+      <string>mąka ryżowa</string>
+      <string>śmietana</string>
+    </ingredients>
+    <category>wołowina</category>
+    <description>Zrazy wołowe podsmażyć. Dusić przez 1 godzinę. Dodać cebulę w paski. dodać grzyby. Zagęścić mąką ryżową. Dodać śmietanę i przyprawy.</description>
+  </Dish>
+  <Dish>
+    <name>Ziemniaki na szybko z patelni</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>piersi z kurczaka</string>
+      <string>ziemniak</string>
+      <string>cebula</string>
+      <string>olej</string>
+      <string>pomidor</string>
+      <string>kiszony ogórek</string>
+    </ingredients>
+    <category>drób</category>
+    <description>karta 23/15</description>
+  </Dish>
+  <Dish>
+    <name>Dorsz z patelni</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>dorsz</string>
+      <string>cebula</string>
+      <string>ocet</string>
+      <string>ziemniak</string>
+      <string>musztarda</string>
+      <string>masło</string>
+      <string>natka pietruszki</string>
+      <string />
+    </ingredients>
+    <category>ryba</category>
+    <description>karta 11/13</description>
+  </Dish>
+  <Dish>
+    <name>Smażona flądra w różnych sosach</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>flądra</string>
+      <string>mąka ryżowa</string>
+      <string>jajko</string>
+      <string>bułka tarta</string>
+      <string>masło</string>
+      <string>majonez</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>ryba</category>
+    <description>karta 5/13</description>
+  </Dish>
+  <Dish>
+    <name>Matiasy w śmietanie i z fasolką szparagową</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>śledź</string>
+      <string>cebula</string>
+      <string>śmietana</string>
+      <string>jogurt</string>
+      <string>fasolka szparagowa</string>
+      <string>masło</string>
+      <string>natka pietruszki</string>
+    </ingredients>
+    <category>ryba</category>
+    <description>karta 4/13</description>
+  </Dish>
+  <Dish>
+    <name>Ragout z jelenia na czerwonym winie</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>jeleń</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+      <string>cebula</string>
+      <string>wino</string>
+      <string>śmietana</string>
+    </ingredients>
+    <category>dziczyzna</category>
+    <description>karta 87/12</description>
+  </Dish>
+  <Dish>
+    <name>Nadziewane piersi indycze</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>indyk</string>
+      <string>musztarda</string>
+      <string>śmietana</string>
+      <string>wątróbki cielęce</string>
+      <string>cebula</string>
+      <string>masło</string>
+      <string>natka pietruszki</string>
+    </ingredients>
+    <category>drób</category>
+    <description>karta 2/12</description>
+  </Dish>
+  <Dish>
+    <name>Kurczak nadziewany w białym winie</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kurczak</string>
+      <string>cebula</string>
+      <string>masło</string>
+      <string>ryż</string>
+      <string>olej</string>
+      <string>wątrobka z kurczaka</string>
+      <string>pieczarki</string>
+      <string>śmietana</string>
+      <string>wino</string>
+      <string>mąka ziemniaczana</string>
+    </ingredients>
+    <category>drób</category>
+    <description>karta 8/12</description>
+  </Dish>
+  <Dish>
+    <name>Gołąbki na kapuście kiszonej</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>kapusta</string>
+      <string>cebula</string>
+      <string>papryka</string>
+      <string>ryż</string>
+      <string>mięso mielone z kurczaka</string>
+      <string>jajko</string>
+      <string>kapusta kiszona</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>drób</category>
+    <description>karta 60/14</description>
+  </Dish>
+  <Dish>
+    <name>Kotlet drobiowy z pieczarkami</name>
+    <count>1</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>filet z kurczaka</string>
+      <string>pieczarki</string>
+      <string>mąka kukurydziana</string>
+      <string>cebula</string>
+      <string>olej</string>
+      <string>masło</string>
+    </ingredients>
+    <category>drób</category>
+    <description>Wyciąć filety z piersi kurczaka. rozbić je tłuczkiem na cienkie plastry, obtoczyć w mące. Smażyć razem z pieczarkami i cebulą. Pod koniec smażenia dodać masło</description>
+  </Dish>
+  <Dish>
+    <name>Czulent z wołowiny</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>fasola</string>
+      <string>ciecierzyca</string>
+      <string>cebula</string>
+      <string>czosnek</string>
+      <string>ziemniak</string>
+      <string>marchew</string>
+      <string>pomidor</string>
+      <string>olej</string>
+    </ingredients>
+    <category>wołowina</category>
+    <description>https://smaker.pl/przepisy-dania-glowne/przepis-czulent-z-wolowiny,187310,fram.html</description>
+  </Dish>
+  <Dish>
+    <name>Gicz z kaczki ze ściółki</name>
+    <count>1</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>kaczka</string>
+      <string>jabłko</string>
+      <string>ziemniaki</string>
+      <string>buraczki</string>
+      <string>chrzan</string>
+    </ingredients>
+    <category>drób</category>
+    <description>Kupne danie gotowe pt. "Gicz z kaczki ze ściółki" z Auchan</description>
+  </Dish>
+  <Dish>
+    <name>Żurek na zakwasie grzyczanym na wędzące drobiowej</name>
+    <count>2</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>zakwas gryczany</string>
+      <string>marchew</string>
+      <string>wędzonka drobiowa</string>
+      <string>pietruszka</string>
+    </ingredients>
+    <category>zupa</category>
+    <description />
+  </Dish>
+  <Dish>
+    <name>Rostbef po tyrolsku</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>olej</string>
+      <string>pomidor</string>
+      <string>cebula</string>
+      <string>masło</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>por</string>
+      <string>wino</string>
+      <string>ocet</string>
+      <string>śmietana</string>
+    </ingredients>
+    <category>wołowina</category>
+    <description>karta 2/10</description>
+  </Dish>
+  <Dish>
+    <name>Kotlety cielęce z serem i pomidorami</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>cielęcina</string>
+      <string>olej</string>
+      <string>masło</string>
+      <string>pomidor</string>
+      <string>ser pleśniowy</string>
+      <string>sos sojowy</string>
+      <string>śmietana</string>
+      <string>wino</string>
+      <string />
+    </ingredients>
+    <category>wołowina</category>
+    <description>Karta 1/10</description>
+  </Dish>
+  <Dish>
+    <name>Pulpety z drobiu w sosie koperkowym</name>
+    <count>0</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>mielone drobiowe</string>
+      <string>bułka tarta</string>
+      <string>cebula</string>
+      <string>koperek</string>
+    </ingredients>
+    <category>drób</category>
+    <description />
+  </Dish>
+  <Dish>
+    <name>Mielony befsztyk z sherry</name>
+    <count>0</count>
+    <priority>3</priority>
+    <ingredients>
+      <string>mielone wołowe</string>
+      <string>śmietana</string>
+      <string>bułka tarta</string>
+      <string>karczoch</string>
+      <string>masło</string>
+      <string>pieczarki</string>
+      <string>wino czerwone</string>
+    </ingredients>
+    <category>wołowina</category>
+    <description>karta 3/8</description>
+  </Dish>
+  <Dish>
+    <name>Potrawka z indyka</name>
+    <count>3</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>indyk</string>
+      <string>marchew</string>
+      <string>pietruszka</string>
+      <string>por</string>
+      <string>cebula</string>
+      <string>olej</string>
+    </ingredients>
+    <category>drób</category>
+    <description />
+  </Dish>
+  <Dish>
+    <name>Filet z indyka z makaronem ryżowym</name>
+    <count>1</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>filet z indyka</string>
+      <string>makaron ryżowy</string>
+      <string>marchew</string>
+      <string>por</string>
+      <string>fasola czerwona</string>
+      <string>olej</string>
+      <string>pomidor</string>
+    </ingredients>
+    <category>drób</category>
+    <description />
+  </Dish>
+  <Dish>
+    <name>Biała kiełbasa drobiowo-wołowa z ziemniakami</name>
+    <count>1</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>wołowina</string>
+      <string>mielone drobiowe</string>
+      <string>ziemniak</string>
+      <string />
+    </ingredients>
+    <category>wołowina</category>
+    <description />
+  </Dish>
+  <Dish>
+    <name>Filet z indyka z ziemniakami</name>
+    <count>1</count>
+    <priority>2</priority>
+    <ingredients>
+      <string>filet z indyka</string>
+      <string>mąka gryczana</string>
+      <string>olej</string>
+      <string>ziemniak</string>
+    </ingredients>
+    <category>drób</category>
+    <description />
   </Dish>
 </ArrayOfDish>

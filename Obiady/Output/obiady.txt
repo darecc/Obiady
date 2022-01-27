@@ -10,3 +10,45 @@
 10.02.2021;Bób
 12.12.2021;Zupa jarzynowa z sercami z kurczaka
 13.12.2021;Zupa jarzynowa z sercami z kurczaka
+15.12.2021;Zapiekanka ziemniaczana z kurczakiem i pieczarkami
+16.12.2021;Zapiekanka ziemniaczana z kurczakiem i pieczarkami
+17.12.2021;Zrazy wołowe z ziemniakami
+18.12.2021;Zrazy wołowe z cebulą w sosie grzybowym
+20.12.2021;Zrazy wołowe z ziemniakami
+22.12.2021;Kotlet drobiowy z pieczarkami
+23.12.2021;Gicz z kaczki ze ściółki
+24.12.2021;Barszcz
+25.12.2021;Barszcz
+26.12.2021;Barszcz
+24.12.2021;Karp
+27.12.2021;Żurek na zakwasie grzyczanym na wędzące drobiowej
+28.12.2021;Żurek na zakwasie grzyczanym na wędzące drobiowej
+29.12.2021;Zupa pomidorowa z ryżem na kurczaku
+30.12.2021;Zupa pomidorowa z ryżem na kurczaku
+31.12.2021;Królik zapiekany z warzywami
+01.01.2022;Królik zapiekany z warzywami
+02.01.2022;Pulpety z wołowiny w sosie grzybowym
+03.01.2022;Pulpety z wołowiny w sosie grzybowym
+04.01.2022;Pulpety z wołowiny w sosie grzybowym
+05.01.2022;Pulpety z wołowiny w sosie grzybowym
+06.01.2022;Kapuśniak z kapusty włoskiej z żołądkami drobiowymi
+07.01.2022;Kapuśniak z kapusty włoskiej z żołądkami drobiowymi
+08.01.2022;Zupa gulasz
+09.01.2022;Zupa gulasz
+10.01.2022;Zupa gulasz
+11.01.2022;Zupa fasolowa z żołądkami z kurczaka
+12.01.2022;Zupa fasolowa z żołądkami z kurczaka
+13.01.2022;Zupa fasolowa z żołądkami z kurczaka
+14.01.2022;Placki ziemniaczane
+15.01.2022;Potrawka z indyka
+16.01.2022;Potrawka z indyka
+17.01.2022;Potrawka z indyka
+18.01.2022;Zupa grzybowa na sercach kurzych
+19.01.2022;Zupa grzybowa na sercach kurzych
+20.01.2022;Zupa ogórkowa z żołądkami drobiowymi
+21.01.2022;Zupa jarzynowa z sercami z kurczaka
+22.01.2022;Filet z indyka z makaronem ryżowym
+23.01.2022;Zupa jarzynowa z sercami z kurczaka
+24.01.2022;Potrawka z indyka
+25.01.2022;Biała kiełbasa drobiowo-wołowa z ziemniakami
+26.01.2022;Filet z indyka z ziemniakami

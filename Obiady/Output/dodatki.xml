@@ -2,7 +2,7 @@
 <ArrayOfSideDish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SideDish>
     <name>Ziemniaki</name>
-    <count>2</count>
+    <count>12</count>
     <priority>2</priority>
     <ingredients>
       <string>ziemniak</string>
@@ -10,7 +10,7 @@
   </SideDish>
   <SideDish>
     <name>Kasza gryczana</name>
-    <count>2</count>
+    <count>5</count>
     <priority>2</priority>
     <ingredients>
       <string>kasza gryczana</string>
@@ -18,7 +18,7 @@
   </SideDish>
   <SideDish>
     <name>Mizeria</name>
-    <count>0</count>
+    <count>1</count>
     <priority>2</priority>
     <ingredients>
       <string>ogórek</string>
@@ -159,7 +159,7 @@
   </SideDish>
   <SideDish>
     <name>Kapusta kiszona</name>
-    <count>1</count>
+    <count>3</count>
     <priority>2</priority>
     <ingredients>
       <string>kapusta kiszona</string>
@@ -208,14 +208,6 @@
     <priority>1</priority>
     <ingredients>
       <string>cieciorka</string>
-    </ingredients>
-  </SideDish>
-  <SideDish>
-    <name>Kasza jaglana</name>
-    <count>0</count>
-    <priority>1</priority>
-    <ingredients>
-      <string>kasza jaglana</string>
     </ingredients>
   </SideDish>
   <SideDish>
@@ -322,35 +314,23 @@
     </ingredients>
   </SideDish>
   <SideDish>
-    <name>Sos ciemny</name>
+    <name>Sos chrzanowy</name>
     <count>0</count>
     <priority>1</priority>
     <ingredients>
+      <string>chrzan</string>
+      <string>masło</string>
+      <string>mąka ryżowa</string>
+      <string>olej</string>
+    </ingredients>
+  </SideDish>
+  <SideDish>
+    <name>Pieczarki z cebulą</name>
+    <count>0</count>
+    <priority>1</priority>
+    <ingredients>
+      <string>pieczarki</string>
       <string>cebula</string>
-      <string>masło</string>
-      <string>olej</string>
-      <string>mąka ryżowa</string>
-    </ingredients>
-  </SideDish>
-  <SideDish>
-    <name>Sos chrzanowy</name>
-    <count>0</count>
-    <priority>1</priority>
-    <ingredients>
-      <string>chrzan</string>
-      <string>masło</string>
-      <string>mąka ryżowa</string>
-      <string>olej</string>
-    </ingredients>
-  </SideDish>
-  <SideDish>
-    <name>Sos chrzanowy</name>
-    <count>0</count>
-    <priority>1</priority>
-    <ingredients>
-      <string>chrzan</string>
-      <string>masło</string>
-      <string>mąka ryżowa</string>
       <string>olej</string>
     </ingredients>
   </SideDish>

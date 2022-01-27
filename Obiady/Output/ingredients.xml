@@ -368,4 +368,16 @@
     <name>żółtko</name>
     <category>nabiał</category>
   </Ingredient>
+  <Ingredient>
+    <name>wędzonka drobiowa</name>
+    <category>drób</category>
+  </Ingredient>
+  <Ingredient>
+    <name>ser pleśniowy</name>
+    <category>nabiał</category>
+  </Ingredient>
+  <Ingredient>
+    <name>makaron ryżowy</name>
+    <category>zbożowe</category>
+  </Ingredient>
 </ArrayOfIngredient>
